@@ -4,9 +4,11 @@
 
 html,
 body,
-index {
+.index {
   width: 100%;
   height: 100%;
+  font-family: 'PPNeueMontreal', sans-serif;
+  font-weight: 800;
 }
 
 body {
@@ -31,8 +33,8 @@ p {
     height: 100%;
     font-family: 'PPNeueMontreal', sans-serif;
     font-weight: 800;
-    padding: 2.08vw 2.78vw;
-    text-align: center;
+    padding: 1.39vw 2.78vw;
+
     .menu {
       display: flex;
       justify-content: space-between;
@@ -66,81 +68,124 @@ p {
         color: var(--white);
       }
     }
-    h1 {
-      font-family: 'PPNeueMontreal', sans-serif;
-      font-weight: 800;
-      font-size: 5vw;
-      color: var(--white);
-      text-shadow: 0px 0px 5px var(--white);
-      margin-top: 2.78vw;
-    }
-    .text_about_media {
-      font-family: 'PPNeueMontreal', sans-serif;
-      font-weight: 800;
-      font-size: 2.22vw;
-      text-align: center;
-      color: var(--white);
-      width: 40.61vw;
-      margin-top: 5.56vw;
-    }
-
-    .text_over_form {
-      font-family: 'PPNeueMontreal', sans-serif;
-      font-weight: 800;
-      font-size: 2.22vw;
-      color: var(--white);
-      margin-top: 2.08vw;
-    }
-
-    form {
+    .container {
+      width: 100%;
+      height: 42.49vw;
       display: flex;
       flex-direction: column;
-      gap: 1.04vw;
-      width: 26.18vw;
-      height: 7.43vw;
-      input,
-      button {
-        width: 26.18vw;
-        height: 3.19vw;
-        top: 1.74vw;
-        border-radius: 1.04vw;
+      align-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      h1 {
         font-family: 'PPNeueMontreal', sans-serif;
         font-weight: 800;
-        font-size: 1.39vw;
-      }
-      input {
-        border: 0.21vw solid var(--white);
-        border-color: var(--white);
+        font-size: 5vw;
         color: var(--white);
-        background-color: transparent;
-        padding: 0.76vw 7.78vw;
+        text-shadow: 0px 0px 5px var(--white);
+        margin-top: 2.78vw;
+        text-align: center;
       }
-      button {
-        border: none;
-        color: var(--blue);
-        background-color: var(--white);
-        padding: 0.76vw 7.78vw;
-        box-shadow: 0px 0px 5px var(--white);
-      }
-      ::placeholder {
+      .text_about_media {
+        font-family: 'PPNeueMontreal', sans-serif;
+        font-weight: 800;
+        font-size: 2.22vw;
+        display: flex;
+        text-align: center;
         color: var(--white);
+        width: 40.61vw;
+        margin-top: 5.56vw;
+      }
+
+      .block_form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: 2.08vw;
+
+        .text_over_form {
+          font-family: 'PPNeueMontreal', sans-serif;
+          font-weight: 800;
+          font-size: 1.67vw;
+          text-align: center;
+          color: var(--white);
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          flex-wrap: nowrap;
+          gap: 1.04vw;
+          width: 26.18vw;
+          height: 7.43vw;
+          margin-top: 1.39vw;
+          input,
+          button {
+            width: 26.18vw;
+            height: 3.19vw;
+            top: 1.74vw;
+            border-radius: 1.04vw;
+            font-family: 'PPNeueMontreal', sans-serif;
+            font-weight: 800;
+            font-size: 1.39vw;
+            text-align: center;
+          }
+          input {
+            border: 0.21vw solid var(--white);
+            border-color: var(--white);
+            color: var(--white);
+            background-color: transparent;
+            padding: 0.76vw 7.78vw;
+          }
+          button {
+            border: none;
+            color: var(--blue);
+            background-color: var(--white);
+            padding: 0.76vw 7.78vw;
+            box-shadow: 0px 0px 5px var(--white);
+            cursor: pointer;
+
+            &:hover {
+              background-color: #c8dbf0;
+              box-shadow: 0px 0px 5px #c8dbf0;
+            }
+          }
+          ::placeholder {
+            color: var(--white);
+          }
+        }
       }
     }
 
     .social {
-      font-size: 2.22vw;
+      width: 52.4vw;
+      margin-top: 6vw;
+      margin-left: auto;
+      font-family: 'PPNeueMontreal', sans-serif;
+      font-weight: 800;
+      font-size: 1.67vw;
       text-align: center;
       color: var(--white);
       height: 3.82vw;
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
+      flex-wrap: wrap;
       align-items: flex-end;
+      justify-content: space-between;
       gap: 30.69vw;
       text-shadow: 0px 0px 5px var(--white);
+
       .social_icons {
-        width: 7.78vw;
-        height: 3.82vw;
+        width: 5.78vw;
+        height: 2.6vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
       }
     }
   }
