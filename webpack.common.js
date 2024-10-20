@@ -60,10 +60,10 @@ module.exports = {
         },
       },
       {
-        test: /\.(ttf|otf|woff|woff2)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]',
+        test: /\.(ttf|otf|woff|woff2|eot)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]',
         },
       },
     ],
@@ -100,6 +100,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles/extra-contraception.html',
       filename: './articles/extra-contraception.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/article1.html',
+      filename: './articles/article1.html',
     }),
     // Страницы тестов
     new HtmlWebpackPlugin({

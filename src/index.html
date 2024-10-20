@@ -6,23 +6,50 @@
     <analytics></analytics>
   </head>
 
-  <body class="index">
-    <h1>Медиа, которое разрушает стереотипы и мифы о сексе</h1>
-
-    <p><a href="articles.html">Почитать</a></p>
+  <body>
+    <!-- <p><a href="articles.html">Почитать</a></p>
     <p><a href="tests.html">Тесты</a></p>
     <p><a href="wheel.html">Рулетка</a></p>
-    <p><a href="about.html">О нас</a></p>
+    <p><a href="about.html">О нас</a></p> -->
 
-    <!-- modify this form HTML and place wherever you want your form -->
-    <form id="my-form" action="https://formspree.io/f/mldrqzor" method="POST">
-      <label>Email:</label>
-      <input type="email" name="email" />
-      <label>Message:</label>
-      <input type="text" name="message" />
-      <button id="my-form-button">Submit</button>
-      <p id="my-form-status"></p>
-    </form>
+    <section class="index">
+      <div class="mainInfo">
+        <div class="menu">
+          <nav>
+            <a class="logo" href="index.html">XOXO</a>
+            <a href="about.html">О нас</a>
+            <a href="articles/article1.html">Публикация</a>
+          </nav>
+          <p>18+</p>
+        </div>
+
+        <h1>
+          Скоро раскроем <br />
+          все тайны...
+        </h1>
+        <p class="text_about_media">
+          Мы рассказываем о реальной сексуальной жизни, избавляем от иллюзий
+          и разрушаем стереотипы, которые формируются культурой кино
+        </p>
+        <p class="text_over_form">Узнай о запуске первым!</p>
+        <form
+          id="my-form"
+          action="https://formspree.io/f/mldrqzor"
+          method="POST"
+        >
+          <input type="email" name="email" placeholder="Твой email" />
+          <button id="my-form-button">Подписаться</button>
+          <p id="my-form-status"></p>
+        </form>
+        <div class="social">
+          <p>Целуем вас xoxo!</p>
+          <div class="social_icons">
+            <a href=""><img src="images/telegram_icon.png" alt="" /></a>
+            <a href=""><img src="images/vk_icon.png" alt="" /></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Place this script at the end of the body tag -->
     <script>

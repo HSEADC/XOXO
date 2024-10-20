@@ -3,11 +3,145 @@
 }
 
 html,
-body {
+body,
+index {
+  width: 100%;
   height: 100%;
 }
 
 body {
-  font-family: 'PT Root UI', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'PPNeueMontreal', sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.1vw;
+}
+
+h1,
+p {
+  font-family: 'PPNeueMontreal', sans-serif;
+  font-weight: 800;
+}
+
+.index {
+  background-image: url(../images/background_main_blue.png);
+  background-size: 100%;
+  width: 100%;
+  height: 58.47vw;
+  .mainInfo {
+    width: 100%;
+    height: 100%;
+    font-family: 'PPNeueMontreal', sans-serif;
+    font-weight: 800;
+    padding: 2.08vw 2.78vw;
+    text-align: center;
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      nav {
+        width: 24.51vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.78vw;
+        .logo {
+          font-family: 'PPNeueMontreal', sans-serif;
+          font-weight: 800;
+          font-size: 2.5vw;
+          color: var(--white);
+          text-decoration: none;
+          text-shadow: 0px 0px 5px var(--white);
+        }
+        a {
+          font-family: 'PPNeueMontreal', sans-serif;
+          font-weight: 800;
+          font-size: 1.39vw;
+          color: var(--white);
+          text-decoration: none;
+        }
+      }
+      p {
+        font-family: 'PPNeueMontreal', sans-serif;
+        font-weight: 800;
+        font-size: 2.22vw;
+        color: var(--white);
+      }
+    }
+    h1 {
+      font-family: 'PPNeueMontreal', sans-serif;
+      font-weight: 800;
+      font-size: 5vw;
+      color: var(--white);
+      text-shadow: 0px 0px 5px var(--white);
+      margin-top: 2.78vw;
+    }
+    .text_about_media {
+      font-family: 'PPNeueMontreal', sans-serif;
+      font-weight: 800;
+      font-size: 2.22vw;
+      text-align: center;
+      color: var(--white);
+      width: 40.61vw;
+      margin-top: 5.56vw;
+    }
+
+    .text_over_form {
+      font-family: 'PPNeueMontreal', sans-serif;
+      font-weight: 800;
+      font-size: 2.22vw;
+      color: var(--white);
+      margin-top: 2.08vw;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.04vw;
+      width: 26.18vw;
+      height: 7.43vw;
+      input,
+      button {
+        width: 26.18vw;
+        height: 3.19vw;
+        top: 1.74vw;
+        border-radius: 1.04vw;
+        font-family: 'PPNeueMontreal', sans-serif;
+        font-weight: 800;
+        font-size: 1.39vw;
+      }
+      input {
+        border: 0.21vw solid var(--white);
+        border-color: var(--white);
+        color: var(--white);
+        background-color: transparent;
+        padding: 0.76vw 7.78vw;
+      }
+      button {
+        border: none;
+        color: var(--blue);
+        background-color: var(--white);
+        padding: 0.76vw 7.78vw;
+        box-shadow: 0px 0px 5px var(--white);
+      }
+      ::placeholder {
+        color: var(--white);
+      }
+    }
+
+    .social {
+      font-size: 2.22vw;
+      text-align: center;
+      color: var(--white);
+      height: 3.82vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: flex-end;
+      gap: 30.69vw;
+      text-shadow: 0px 0px 5px var(--white);
+      .social_icons {
+        width: 7.78vw;
+        height: 3.82vw;
+      }
+    }
+  }
 }
