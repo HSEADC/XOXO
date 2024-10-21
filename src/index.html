@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XOXO</title>
     <analytics></analytics>
   </head>
@@ -55,8 +56,8 @@
         <div class="social">
           <p>Целуем вас xoxo!</p>
           <div class="social_icons">
-            <a href=""><img src="images/telegram_icon.png" alt="" /></a>
-            <a href=""><img src="images/vk_icon.png" alt="" /></a>
+            <a class="tg_icon" href=""></a>
+            <a class="vk_icon" href=""></a>
           </div>
         </div>
       </div>
@@ -79,7 +80,7 @@
         })
           .then((response) => {
             if (response.ok) {
-              status.innerHTML = 'Thanks for your submission!'
+              status.innerHTML = 'Спасибо за подписку!'
               form.reset()
             } else {
               response.json().then((data) => {

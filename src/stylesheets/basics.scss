@@ -116,7 +116,6 @@ p {
         .text_over_form {
           font-family: 'PPNeueMontreal', sans-serif;
           font-weight: 800;
-
           font-size: 1.67vw;
           text-align: center;
           color: var(--white);
@@ -140,6 +139,7 @@ p {
             font-family: 'PPNeueMontreal', sans-serif;
             font-weight: 800;
             font-size: 1.39vw;
+            padding: 0.76vw;
             text-align: center;
           }
           input {
@@ -147,13 +147,20 @@ p {
             border-color: var(--white);
             color: var(--white);
             background-color: transparent;
-            padding: 0.76vw 7.78vw;
+            text-align: center;
+            outline: none;
+          }
+          #my-form-status {
+            font-family: 'PPNeueMontreal', sans-serif;
+            font-weight: 500;
+            font-size: 0.97vw;
+            color: var(--white);
+            text-align: center;
           }
           button {
             border: none;
             color: var(--blue);
             background-color: var(--white);
-            padding: 0.76vw 7.78vw;
             box-shadow: 0px 0px 5px var(--white);
             cursor: pointer;
 
@@ -172,32 +179,132 @@ p {
     .social {
       width: 52.4vw;
       margin-top: 6vw;
-      margin-left: auto;
+      margin-left: 41vw;
       font-size: 1.67vw;
       text-align: center;
       color: var(--white);
       height: 3.82vw;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       align-items: flex-end;
       justify-content: space-between;
       gap: 30.69vw;
       text-shadow: 0px 0px 5px var(--white);
-
       p {
         font-family: 'PPNeueMontreal', sans-serif;
         font-weight: 800;
+        text-align: center;
       }
-
       .social_icons {
-        width: 5.78vw;
-        height: 2.6vw;
+        width: 7.4vw;
+        height: 3.26vw;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        align-items: flex-end;
+        flex-wrap: nowrap;
+        align-items: center;
         justify-content: space-between;
+
+        .tg_icon,
+        .vk_icon {
+          width: 3.26vw;
+          height: 3.26vw;
+        }
+        .tg_icon {
+          background-image: url(../images/telegram_icon.png);
+          background-size: 100%;
+        }
+        .vk_icon {
+          background-image: url(../images/vk_icon.png);
+          background-size: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .index {
+    background-image: url(../images/background_main_blue_mobile.png);
+    background-size: 100%;
+    height: 100%;
+    .mainInfo {
+      padding: 4.64vw;
+      .menu {
+        nav {
+          width: 57.51vw;
+          .logo {
+            font-size: 5.58vw;
+          }
+          a {
+            font-size: 3.72vw;
+          }
+        }
+        p {
+          font-size: 4.65vw;
+        }
+      }
+      .container {
+        height: 115.81vw;
+        margin-top: 25vw;
+        flex-wrap: nowrap;
+        h1 {
+          font-size: 11vw;
+        }
+        .text_about_media {
+          font-size: 4.65vw;
+          width: 74.65vw;
+          margin-top: 26.7vw;
+        }
+        .block_form {
+          .text_over_form {
+            font-size: 3.72vw;
+            margin-top: 9.3vw;
+          }
+          form {
+            width: 82.09vw;
+            height: 23.26vw;
+            gap: 2.33vw;
+            margin-top: 3.49vw;
+            input,
+            button {
+              width: 82.09vw;
+              height: 10.47vw;
+              border-radius: 2.79vw;
+              padding: 2.09vw 22.09vw;
+              font-size: 3.72vw;
+            }
+            input {
+              border: 0.7vw solid var(--white);
+            }
+            #my-form-status {
+              font-size: 2.79vw;
+            }
+          }
+        }
+      }
+      .social {
+        font-size: 3.72vw;
+        width: 100%;
+        height: 19.77vw;
+        margin-top: 25.23vw;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.79vw;
+        .social_icons {
+          width: 23.98vw;
+          height: 13.26vw;
+          a {
+            width: 13.26vw;
+            height: 13.26vw;
+          }
+          .tg_icon,
+          .vk_icon {
+            width: 10.93vw;
+            height: 10.93vw;
+          }
+        }
       }
     }
   }
