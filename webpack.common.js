@@ -9,6 +9,7 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
+    toggleClick: './src/javascripts/toggleClick.js',
   },
   output: {
     filename: '[name].js',
@@ -78,37 +79,45 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
+      chunks: ['index'],
     }),
     // Страницы разделов
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html',
+      chunks: ['index'],
     }),
     new HtmlWebpackPlugin({
       template: './src/tests.html',
       filename: './tests.html',
+      chunks: ['index'],
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: './about.html',
+      chunks: ['index'],
     }),
     new HtmlWebpackPlugin({
       template: './src/wheel.html',
       filename: './wheel.html',
+      chunks: ['index'],
     }),
     // Страницы статей
     new HtmlWebpackPlugin({
       template: './src/articles/extra-contraception.html',
       filename: './articles/extra-contraception.html',
+      chunks: ['index'],
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/article1.html',
       filename: './articles/article1.html',
+      chunks: ['index', 'toggleClick'],
     }),
     // Страницы тестов
     new HtmlWebpackPlugin({
       template: './src/tests/test1.html',
       filename: './tests/test1.html',
+      chunks: ['index'],
     }),
 
     // Internal pages

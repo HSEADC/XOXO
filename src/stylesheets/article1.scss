@@ -1,0 +1,32 @@
+.text_article {
+  .toggle_list {
+    div {
+      border-radius: 10vw;
+    }
+    p {
+      color: var(--pink);
+    }
+  }
+}
+.article {
+  .article_block {
+    .article_title {
+      h1 {
+        width: 69.51vw;
+        font-size: 3.89vw;
+        color: var(--black);
+      }
+      p {
+        width: 62.5vw;
+        font-size: 2.22vw;
+        color-interpolation-filters: var(--blue);
+      }
+    }
+  }
+}
+.hidden_block_text {
+  display: none;
+}
+.hidden_block_text.visible {
+  display: block;
+}
