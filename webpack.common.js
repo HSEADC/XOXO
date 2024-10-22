@@ -8,12 +8,12 @@ const path = require('path')
 
 module.exports = {
   entry: {
-    index: './src/index.js'
+    index: './src/index.js',
   },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'docs'),
-    clean: true
+    clean: true,
   },
   module: {
     rules: [
@@ -24,9 +24,9 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['@babel/plugin-proposal-class-properties']
-          }
-        }
+            plugins: ['@babel/plugin-proposal-class-properties'],
+          },
+        },
       },
       {
         test: /\.(sa|sc|c)ss$/i,
@@ -37,47 +37,78 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [['postcss-preset-env']]
-              }
-            }
+                plugins: [['postcss-preset-env']],
+              },
+            },
           },
-          'sass-loader'
-        ]
+          'sass-loader',
+        ],
       },
       {
         test: /\.html$/i,
-        loader: 'html-loader'
+        loader: 'html-loader',
       },
       {
         resourceQuery: /raw/,
-        type: 'asset/source'
+        type: 'asset/source',
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|webp)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[hash][ext][query]'
-        }
+          filename: 'images/[hash][ext][query]',
+        },
       },
       {
-        test: /\.(ttf|otf|woff|woff2)$/i,
-        loader: 'file-loader',
-        options: {
-          name: 'fonts/[name].[ext]'
-        }
-      }
-    ]
+        test: /\.(ttf|otf|woff|woff2|eot)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'fonts/[hash][ext][query]',
+        },
+      },
+    ],
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: '[id].css'
+      chunkFilename: '[id].css',
     }),
 
-    // Landing page
+    // Index
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html'
+      filename: './index.html',
+    }),
+    // Страницы разделов
+    new HtmlWebpackPlugin({
+      template: './src/articles.html',
+      filename: './articles.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests.html',
+      filename: './tests.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: './about.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/wheel.html',
+      filename: './wheel.html',
+    }),
+    // Страницы статей
+    new HtmlWebpackPlugin({
+      template: './src/articles/extra-contraception.html',
+      filename: './articles/extra-contraception.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/article1.html',
+      filename: './articles/article1.html',
+    }),
+    // Страницы тестов
+    new HtmlWebpackPlugin({
+      template: './src/tests/test1.html',
+      filename: './tests/test1.html',
     }),
 
     // Internal pages
@@ -95,11 +126,11 @@ module.exports = {
         path: path.join(__dirname, './src/partials/analytics.html'),
         location: 'analytics',
         template_filename: '*',
-        priority: 'replace'
-      }
-    ])
+        priority: 'replace',
+      },
+    ]),
   ],
   optimization: {
-    minimizer: [new CssMinimizerPlugin()]
-  }
+    minimizer: [new CssMinimizerPlugin()],
+  },
 }

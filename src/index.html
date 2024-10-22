@@ -2,31 +2,66 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
-    <title>static-site-boilerplate index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XOXO</title>
     <analytics></analytics>
   </head>
 
-  <body class="index">
-    <div class="images">
-      <div class="image" id="bgPNG"></div>
-      <div class="image" id="bgJPG"></div>
-      <div class="image" id="bgSVG"></div>
-      <img src="images/image.png" />
-      <img src="images/image.jpg" />
-      <img src="images/image.svg" />
-    </div>
+  <body>
+    <!-- <p><a href="articles.html">Почитать</a></p>
+    <p><a href="tests.html">Тесты</a></p>
+    <p><a href="wheel.html">Рулетка</a></p>
+    <p><a href="about.html">О нас</a></p> -->
 
-    <div>This is a landing page</div>
+    <section class="index">
+      <div class="mainInfo">
+        <div class="menu">
+          <nav>
+            <a class="logo" href="index.html">XOXO</a>
+            <a href="about.html">О нас</a>
+            <a href="articles/article1.html">Публикация</a>
+          </nav>
+          <p>18+</p>
+        </div>
 
-    <!-- modify this form HTML and place wherever you want your form -->
-    <form id="my-form" action="https://formspree.io/f/mldrqzor" method="POST">
-      <label>Email:</label>
-      <input type="email" name="email" />
-      <label>Message:</label>
-      <input type="text" name="message" />
-      <button id="my-form-button">Submit</button>
-      <p id="my-form-status"></p>
-    </form>
+        <div class="container">
+          <!-- первый блок колонки -->
+          <h1>
+            Скоро раскроем <br />
+            все тайны...
+          </h1>
+          <!-- второй блок колонки -->
+          <p class="text_about_media">
+            Мы рассказываем о реальной сексуальной жизни, избавляем от иллюзий
+            и разрушаем стереотипы, которые формируются культурой кино
+          </p>
+
+          <!-- третий блок колонки -->
+          <div class="block_form">
+            <p class="text_over_form">Узнай о запуске первым!</p>
+
+            <!-- здесь делаю колонку -->
+            <form
+              id="my-form"
+              action="https://formspree.io/f/mldrqzor"
+              method="POST"
+            >
+              <input type="email" name="email" placeholder="Твой email" />
+              <button id="my-form-button">Подписаться</button>
+              <p id="my-form-status"></p>
+            </form>
+          </div>
+        </div>
+
+        <div class="social">
+          <p>Целуем вас xoxo!</p>
+          <div class="social_icons">
+            <a class="tg_icon" href=""></a>
+            <a class="vk_icon" href=""></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Place this script at the end of the body tag -->
     <script>
@@ -45,7 +80,7 @@
         })
           .then((response) => {
             if (response.ok) {
-              status.innerHTML = 'Thanks for your submission!'
+              status.innerHTML = 'Спасибо за подписку!'
               form.reset()
             } else {
               response.json().then((data) => {

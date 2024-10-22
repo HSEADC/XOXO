@@ -1,31 +1,41 @@
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('fonts/PT-Root-UI_Light.woff2') format('woff2'),
-    url('fonts/PT-Root-UI_Light.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
+  font-family: 'PPNeueMontreal';
+  src: url('../fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+    url('../fonts/PPNeueMontreal-Bold.woff') format('woff'),
+    url('../fonts/PPNeueMontreal-Bold.otf') format('opentype');
+  font-weight: 800;
+  font-style: bold;
 }
-
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('fonts/PT-Root-UI_Regular.woff2') format('woff2'),
-    url('fonts/PT-Root-UI_Regular.woff') format('woff');
+  font-family: 'PPNeueMontreal';
+  src: url('../fonts/PPNeueMontreal-Book.woff2') format('woff2'),
+    url('../fonts/PPNeueMontreal-Book.woff') format('woff'),
+    url('../fonts/PPNeueMontreal-Book.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('fonts/PT-Root-UI_Medium.woff2') format('woff2'),
-    url('fonts/PT-Root-UI_Medium.woff') format('woff');
+  font-family: 'PPNeueMontreal';
+  src: url('../fonts/PPNeueMontreal-Italic.woff2') format('woff2'),
+    url('../fonts/PPNeueMontreal-Italic.woff') format('woff'),
+    url('../fonts/PPNeueMontreal-Italic.otf') format('opentype');
+  font-weight: 450;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('../fonts//PPNeueMontreal-Medium.woff2') format('woff2'),
+    url('../fonts/PPNeueMontreal-Medium.woff') format('woff'),
+    url('../fonts/PPNeueMontreal-Medium.otf') format('opentype');
   font-weight: 500;
-  font-style: normal;
+  font-style: medium;
 }
 
 @font-face {
-  font-family: 'PT Root UI';
-  src: url('fonts/PT-Root-UI_Bold.woff2') format('woff2'),
-    url('fonts/PT-Root-UI_Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
+  font-family: 'PPNeueMontreal';
+  src: url('../fonts/PPNeueMontreal-Thin.woff2') format('woff2'),
+    url('../fonts/PPNeueMontreal-Thin.woff') format('woff'),
+    url('../fonts/PPNeueMontreal-Thin.otf') format('opentype');
+  font-weight: 200;
+  font-style: thin;
 }
