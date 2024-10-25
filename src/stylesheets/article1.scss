@@ -119,6 +119,7 @@
       flex-direction: column;
       flex-wrap: nowrap;
       gap: 2.78vw;
+      transition: filter 0.3s ease;
       .toggle_list {
         display: flex;
         flex-direction: column;
@@ -147,13 +148,13 @@
             transition: transform 0.2s ease-in-out;
           }
           p {
-            font-size: 2.22vw;
+            font-size: 1.67vw;
             font-weight: 500;
             color: var(--pink);
           }
         }
         p {
-          font-size: 2.22vw;
+          font-size: 1.67vw;
           font-weight: 500;
           width: 62.5vw;
           color: var(--dark_grey);
@@ -209,19 +210,19 @@
       }
       .text_block {
         width: 94.44vw;
-        height: 14.44vw;
+        height: 11vw;
         padding: 2.78vw 23.96vw 2.78vw 7.2vw;
         background-color: var(--pink);
         border-radius: 1.04vw;
         p {
-          font-size: 2.22vw;
+          font-size: 1.67vw;
           font-weight: 500;
           color: var(--white);
         }
       }
       .text_last {
         width: 62.5vw;
-        font-size: 2.22vw;
+        font-size: 1.67vw;
         font-weight: 500;
         color: var(--dark_grey);
         margin-left: 7.21vw;

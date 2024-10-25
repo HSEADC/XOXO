@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   word.addEventListener('mouseenter', () => {
     content.classList.add('blur')
   })
-
   word.addEventListener('mouseleave', () => {
     content.classList.remove('blur')
   })
