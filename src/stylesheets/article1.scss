@@ -1,6 +1,6 @@
 .article {
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 0.69vw 2.78vw;
   display: flex;
   flex-direction: column;
@@ -137,13 +137,14 @@
             transition: 0.3s;
           }
           cursor: pointer;
-          #toggle_triangle {
+          #triangle {
             width: 2.22vw;
             height: 2.01vw;
             background-image: url(/src/images/toggle_triangle.svg);
             background-size: 100%;
             background-repeat: no-repeat;
             rotate: -90deg;
+            transition: transform 0.2s ease-in-out;
           }
           p {
             font-size: 2.22vw;
@@ -155,7 +156,7 @@
           font-size: 2.22vw;
           font-weight: 500;
           width: 62.5vw;
-          color: var(--black);
+          color: var(--dark_grey);
         }
         .hidden_block_text,
         .visible_text {
@@ -166,6 +167,38 @@
           flex-direction: column;
           flex-wrap: nowrap;
           gap: 1.39vw;
+          .termin {
+            width: 26.81vw;
+            position: fixed;
+            background-color: var(--pink);
+            padding: 1.39vw;
+            border-radius: 0.69vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-75%, -50%);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease;
+            z-index: 100;
+            p {
+              width: 26.81vw;
+              font-size: 1.39vw;
+              color: var(--white);
+            }
+          }
+          .highlighted-word {
+            position: relative;
+            color: var(--pink);
+            font-weight: 500;
+            cursor: pointer;
+          }
+          .highlighted-word:hover ~ .termin {
+            opacity: 1;
+            visibility: visible;
+          }
+          .highlighted-word:hover ~ .article {
+            filter: blur(0.21vw);
+          }
         }
         .hidden_block_text {
           display: none;
@@ -190,9 +223,88 @@
         width: 62.5vw;
         font-size: 2.22vw;
         font-weight: 500;
-        color: var(--black);
+        color: var(--dark_grey);
         margin-left: 7.21vw;
       }
     }
   }
+}
+.footer {
+  width: 100%;
+  top: 6.94vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.04vw;
+  border-radius: 1.04vw 1.04vw 0 0;
+  padding: 2.08vw 0 1.39vw 0;
+  background-color: var(--pink);
+  color: var(--white);
+  .logo_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-shadow: 0px 0px 5px var(--white);
+    h1 {
+      font-size: 2.5vw;
+      text-decoration: none;
+
+      &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+      }
+    }
+    p {
+      font-size: 1.39vw;
+    }
+  }
+  .teg_link {
+    height: 2.78vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.69vw;
+    p {
+      color: var(--pink);
+      background-color: var(--white);
+      padding: 0.63vw;
+      border-radius: 0.42vw;
+    }
+  }
+  p {
+    font-size: 1.39vw;
+  }
+
+  .social_icons {
+    width: 6.7vw;
+    height: 3.26vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    .tg_icon,
+    .vk_icon {
+      width: 3vw;
+      height: 3vw;
+      &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+      }
+    }
+    .tg_icon {
+      background-image: url(../images/telegram_icon.svg);
+      background-size: 100%;
+    }
+    .vk_icon {
+      background-image: url(../images/vk_icon.svg);
+      background-size: 100%;
+    }
+  }
+}
+.blur {
+  filter: blur(0.21vw);
+  transition: filter 0.3s ease;
 }

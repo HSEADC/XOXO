@@ -10,6 +10,7 @@ module.exports = {
   entry: {
     index: './src/index.js',
     toggleClick: './src/javascripts/toggleClick.js',
+    terminHover: './src/javascripts/terminHover.js',
   },
   output: {
     filename: '[name].js',
@@ -111,7 +112,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles/article1.html',
       filename: './articles/article1.html',
-      chunks: ['index', 'toggleClick'],
+      chunks: ['index', 'toggleClick', 'terminHover'],
     }),
     // Страницы тестов
     new HtmlWebpackPlugin({
