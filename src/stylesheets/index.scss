@@ -62,7 +62,7 @@
       h1 {
         font-size: 5vw;
         color: var(--white);
-        text-shadow: 0px 0px 5px var(--white);
+        text-shadow: 0px 0px 0.35vw var(--white);
         margin-top: 1.78vw;
         text-align: center;
       }
@@ -189,7 +189,7 @@
 
 @media screen and (max-width: 1025px) {
   .index {
-    background-image: url(../images/background_main_blue_tablet.png);
+    background-image: url(../images/background_main_blue_tablet_2.png);
     background-size: 100%;
     background-repeat: no-repeat;
     height: 130.8vw;
@@ -283,7 +283,7 @@
     background-image: url(../images/background_main_blue_mobile.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 226vw;
+    height: 217vw;
     .mainInfo {
       padding: 1.93vw 3.91vw;
       .menu {
