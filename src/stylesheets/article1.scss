@@ -10,13 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.69vw 2.64vw;
-    border-radius: 1.04vw;
-    border: 0.21vw solid var(--pink);
-    border-color: var(--pink);
-    h2 {
-      text-shadow: 0px 0px 5px var(--pink);
-    }
+    padding: 1.2vw 0;
 
     nav {
       width: 24.51vw;
@@ -28,7 +22,7 @@
         font-size: 2.5vw;
         color: var(--pink);
         text-decoration: none;
-        text-shadow: 0px 0px 5px var(--pink);
+        text-shadow: 0px 0px 0.35vw var(--pink);
         &:hover {
           opacity: 0.7;
           transition: 0.3s;
@@ -36,6 +30,7 @@
       }
       a {
         font-size: 1.39vw;
+        font-weight: 800;
         color: var(--pink);
         text-decoration: none;
         letter-spacing: -0.04vw;
@@ -107,11 +102,12 @@
       overflow: hidden;
       position: relative;
       background-color: var(--blue);
+      background-image: url(/src/images/article1_cover_2.png);
+      background-size: cover;
+      background-position: 50% 12%;
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        object-position: 50% 12%;
       }
     }
     .text_article_1 {
@@ -125,7 +121,6 @@
         flex-direction: column;
         flex-wrap: nowrap;
         gap: 1.39vw;
-
         .click_toggle {
           display: flex;
           flex-direction: row;
@@ -156,7 +151,7 @@
         p {
           font-size: 1.67vw;
           font-weight: 500;
-          width: 62.5vw;
+          width: 60.5vw;
           color: var(--dark_grey);
         }
         .hidden_block_text,
@@ -271,9 +266,11 @@
       background-color: var(--white);
       padding: 0.63vw;
       border-radius: 0.42vw;
+      font-weight: 800;
     }
   }
   p {
+    font-weight: 800;
     font-size: 1.39vw;
   }
 
@@ -312,20 +309,18 @@
 
 @media screen and (max-width: 1025px) {
   .article {
-    padding: 2.93vw 3.91vw;
+    padding: 1.7vw 3.91vw;
 
     .menu {
       width: 92.19vw;
-      padding: 0.69vw 2.64vw;
-      border-radius: 1.46vw;
-      border: 0.29vw solid var(--pink);
+      padding: 1.76vw 0;
       nav {
-        width: 37.47vw;
+        width: 31.47vw;
         .logo {
           font-size: 3.52vw;
         }
         a {
-          font-size: 2.34vw;
+          font-size: 1.95vw;
         }
         p {
           font-size: 3.13vw;
@@ -354,7 +349,7 @@
         width: 74.61vw;
         height: 16.6vw;
         gap: 0.78vw;
-        margin-left: 10.16vw;
+        margin-left: 0;
         h2 {
           font-size: 5.47vw;
           line-height: 5.47vw;
@@ -371,6 +366,326 @@
           width: 100%;
           height: 100%;
         }
+      }
+      .text_article_1 {
+        gap: 3.91vw;
+        .toggle_list {
+          gap: 1.95vw;
+
+          .click_toggle {
+            gap: 1.95vw;
+            margin-left: 3.7vw;
+            &:hover {
+              opacity: 0.8;
+              transition: 0.3s;
+            }
+            cursor: pointer;
+            #triangle {
+              width: 3.13vw;
+              height: 2.83vw;
+            }
+            p {
+              font-size: 2.34vw;
+            }
+          }
+          p {
+            font-size: 2.34vw;
+            width: 65.89vw;
+          }
+          .hidden_block_text,
+          .visible_text {
+            margin-left: 8.5vw;
+          }
+          .visible_text {
+            gap: 1.95vw;
+            .termin {
+              width: 26.81vw;
+              padding: 1.39vw; //исправить,  когда решу проблему с его  появлением
+              p {
+                width: 26.81vw;
+                font-size: 2.34vw;
+              }
+            }
+            .highlighted-word:hover ~ .termin {
+              opacity: 1;
+              visibility: visible;
+            }
+            .highlighted-word:hover ~ .article {
+              filter: blur(0.21vw);
+            }
+          }
+          .hidden_block_text {
+            display: none;
+          }
+          .hidden_block_text.visible {
+            display: block;
+          }
+        }
+        .text_block {
+          width: 92.19vw;
+          height: 15vw;
+          padding: 2.78vw 20.96vw 2.78vw 8.35vw;
+          background-color: var(--pink);
+          border-radius: 1.04vw;
+          p {
+            font-size: 2.34vw;
+            font-weight: 500;
+            color: var(--white);
+          }
+        }
+        .text_last {
+          width: 65.89vw;
+          font-size: 2.34vw;
+          margin-left: 8.5vw;
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    top: 6.94vw;
+    gap: 1.46vw;
+    border-radius: 1.04vw 1.04vw 0 0;
+    padding: 2.93vw 0 1.95vw 0;
+    background-color: var(--pink);
+    color: var(--white);
+    .logo_footer {
+      text-shadow: 0px 0px 0.49vw var(--white);
+      h1 {
+        font-size: 4.69vw;
+
+        &:hover {
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+      }
+      p {
+        font-size: 1.95vw;
+      }
+    }
+    .teg_link {
+      height: 3.91vw;
+      gap: 0.98vw;
+      p {
+        padding: 0.88vw;
+        border-radius: 0.59vw;
+      }
+    }
+    p {
+      font-size: 1.95vw;
+    }
+    .social_icons {
+      width: 13.5vw;
+      height: 5.86vw;
+      .tg_icon,
+      .vk_icon {
+        width: 5.86vw;
+        height: 5.86vw;
+        &:hover {
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+      }
+      .tg_icon {
+        background-image: url(../images/telegram_icon.svg);
+        background-size: 100%;
+      }
+      .vk_icon {
+        background-image: url(../images/vk_icon.svg);
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 431px) {
+  .article {
+    padding: 1.93vw 3.91vw;
+
+    .menu {
+      width: 92.7vw;
+      padding: 4.19vw 0;
+      nav {
+        width: 52.51vw;
+        .logo {
+          font-size: 5.58vw;
+          text-shadow: 0px 0px 1.16vw var(--pink);
+        }
+        a {
+          font-size: 3.72vw;
+        }
+      }
+      p {
+        font-size: 4.64vw;
+        text-shadow: 0px 0px 1.16vw var(--pink);
+      }
+    }
+    .article_block {
+      gap: 4.65vw;
+      .tegs {
+        height: 8.3vw;
+        gap: 2.09vw;
+        .teg_back {
+          background-image: url(../images/arrow_back.svg);
+          background-size: 60%;
+          padding: 2.56vw 4.65vw;
+          border-radius: 1.4vw;
+        }
+        .teg_1,
+        .teg_2 {
+          font-size: 3.72vw;
+          border-radius: 1.4vw;
+          padding: 2.09vw;
+        }
+      }
+      .article_title {
+        width: 82.09vw;
+        height: 16vw;
+        gap: 0;
+        margin-left: 0;
+        h2 {
+          font-size: 6.05vw;
+          line-height: 6.05vw;
+        }
+        p {
+          font-size: 3.72vw;
+        }
+      }
+      .cover {
+        width: 92.2vw;
+        height: 84.65vw;
+        border-radius: 2.33vw;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .text_article_1 {
+        gap: 4.65vw;
+        .toggle_list {
+          gap: 1.95vw;
+
+          .click_toggle {
+            gap: 1.95vw;
+            margin-left: 3.7vw;
+            &:hover {
+              opacity: 0.8;
+              transition: 0.3s;
+            }
+            cursor: pointer;
+            #triangle {
+              width: 4.42vw;
+              height: 4.88vw;
+            }
+            p {
+              font-size: 3.72vw;
+            }
+          }
+          p {
+            font-size: 3.72vw;
+            width: 80.89vw;
+          }
+          .hidden_block_text,
+          .visible_text {
+            margin-left: 3.7vw;
+          }
+          .visible_text {
+            gap: 1.95vw;
+            .termin {
+              width: 26.81vw;
+              padding: 1.39vw; //исправить,  когда решу проблему с его  появлением
+              p {
+                width: 26.81vw;
+                font-size: 2.34vw;
+              }
+            }
+            .highlighted-word:hover ~ .termin {
+              opacity: 1;
+              visibility: visible;
+            }
+            .highlighted-word:hover ~ .article {
+              filter: blur(0.21vw);
+            }
+          }
+          .hidden_block_text {
+            display: none;
+          }
+          .hidden_block_text.visible {
+            display: block;
+          }
+        }
+        .text_block {
+          width: 92.4vw;
+          height: 25vw;
+          padding: 2.78vw 3.96vw 2.78vw 4.35vw;
+          background-color: var(--pink);
+          border-radius: 2.33vw;
+          p {
+            font-size: 3.72vw;
+            font-weight: 500;
+          }
+        }
+        .text_last {
+          width: 80.89vw;
+          font-size: 3.72vw;
+          margin-left: 3.7vw;
+        }
+      }
+    }
+  }
+  .footer {
+    width: 100%;
+    top: 6.94vw;
+    gap: 3.49vw;
+    border-radius: 2.33vw 2.33vw 0 0;
+    padding: 9.3vw 0 6.98vw 0;
+    .logo_footer {
+      text-shadow: 0px 0px 0.49vw var(--white);
+      h1 {
+        font-size: 7.44vw;
+        &:hover {
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+      }
+      p {
+        font-size: 3.72vw;
+      }
+    }
+    .teg_link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 33.2vw;
+      gap: 1.86vw;
+      p {
+        font-size: 3.72vw;
+        padding: 1.63vw;
+        border-radius: 1.16vw;
+      }
+    }
+    p {
+      font-size: 3.72vw;
+    }
+    .social_icons {
+      width: 20.56vw;
+      height: 9.3vw;
+      .tg_icon,
+      .vk_icon {
+        width: 9.3vw;
+        height: 9.3vw;
+        &:hover {
+          opacity: 0.7;
+          transition: 0.3s;
+        }
+      }
+      .tg_icon {
+        background-image: url(../images/telegram_icon.svg);
+        background-size: 100%;
+      }
+      .vk_icon {
+        background-image: url(../images/vk_icon.svg);
+        background-size: 100%;
       }
     }
   }

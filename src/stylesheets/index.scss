@@ -13,12 +13,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.69vw 2.64vw;
-      border-radius: 1.04vw;
-
-      p {
-        text-shadow: 0px 0px 5px var(--white);
-      }
+      padding: 1.2vw 0;
 
       nav {
         width: 24.51vw;
@@ -30,7 +25,7 @@
           font-size: 2.5vw;
           color: var(--white);
           text-decoration: none;
-          text-shadow: 0px 0px 5px var(--white);
+          text-shadow: 0px 0px 0.35vw var(--white);
           &:hover {
             opacity: 0.7;
             transition: 0.3s;
@@ -38,6 +33,7 @@
         }
         a {
           font-size: 1.39vw;
+          font-weight: 800;
           color: var(--white);
           text-decoration: none;
           letter-spacing: -0.04vw;
@@ -56,7 +52,7 @@
     }
     .container {
       width: 100%;
-      height: 37.5vw;
+      height: 45.5vw;
       display: flex;
       flex-direction: column;
       align-content: center;
@@ -67,17 +63,16 @@
         font-size: 5vw;
         color: var(--white);
         text-shadow: 0px 0px 5px var(--white);
-        margin-top: 2.78vw;
+        margin-top: 1.78vw;
         text-align: center;
       }
       .text_about_media {
-        font-size: 2.22vw;
-        font-weight: 800;
+        font-size: 1.67vw;
+        font-weight: 500;
         display: flex;
         text-align: center;
         color: var(--white);
-        width: 40.61vw;
-        margin-top: 2.56vw;
+        width: 29.61vw;
       }
       .block_form {
         width: 100%;
@@ -85,9 +80,9 @@
         flex-direction: column;
         align-content: center;
         flex-wrap: wrap;
-        margin-top: 2.08vw;
+        margin-top: 0;
         .text_over_form {
-          font-size: 1.67vw;
+          font-size: 1.39vw;
           font-weight: 800;
           text-align: center;
           color: var(--white);
@@ -97,24 +92,24 @@
           flex-direction: column;
           align-content: center;
           flex-wrap: nowrap;
-          gap: 1.04vw;
-          width: 26.18vw;
-          height: 7.43vw;
+          gap: 0.69vw;
+          width: 23.19vw;
+          height: 7.22vw;
           margin-top: 1.39vw;
           input,
           button {
-            width: 26.18vw;
-            height: 3.19vw;
+            width: 23.19vw;
+            height: 3.26vw;
             top: 1.74vw;
             border-radius: 1.04vw;
             font-family: 'PPNeueMontreal', sans-serif;
             font-weight: 800;
-            font-size: 1.39vw;
+            font-size: 1.11vw;
             padding: 0.76vw;
             text-align: center;
           }
           input {
-            border: 0.21vw solid var(--white);
+            border: 0.14vw solid var(--white);
             border-color: var(--white);
             color: var(--white);
             background-color: transparent;
@@ -147,18 +142,15 @@
     }
     .social {
       width: 51.8vw;
-      margin-top: 2vw;
-      margin-left: 40.2vw;
       font-size: 1.67vw;
       text-align: center;
       color: var(--white);
-      height: 3.82vw;
+      height: 5.82vw;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: nowrap;
-      align-items: flex-end;
+      align-items: center;
       justify-content: space-between;
-      gap: 28.69vw;
       text-shadow: 0px 0px 5px var(--white);
       p {
         text-align: center;
@@ -200,17 +192,20 @@
     background-image: url(../images/background_main_blue_tablet.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 133.4vw;
+    height: 130.8vw;
+
     .mainInfo {
-      padding: 2.93vw 3.91vw;
+      padding: 1.7vw 3.91vw;
       .menu {
+        width: 92.19vw;
+        padding: 1.76vw 0;
         nav {
-          width: 37.47vw;
+          width: 31.47vw;
           .logo {
             font-size: 3.52vw;
           }
           a {
-            font-size: 2.34vw;
+            font-size: 1.95vw;
           }
           p {
             font-size: 3.13vw;
@@ -219,7 +214,7 @@
       }
 
       .container {
-        height: 70.94vw;
+        height: 102.94vw;
         margin-top: 15.63vw;
         flex-wrap: nowrap;
         h1 {
@@ -260,13 +255,12 @@
       }
       .social {
         font-size: 2.34vw;
-        width: 53.32vw;
-        height: 5.37vw;
-        margin-top: 25.23vw;
-        margin-left: 36.2vw;
-        flex-direction: row;
+        width: 56.32vw;
+        height: 10.37vw;
+        margin-top: 22.23vw;
+        flex-direction: column;
         align-items: center;
-        gap: 2.79vw;
+        gap: 1.79vw;
         .social_icons {
           width: 12vw;
           height: 5.37vw;
@@ -291,19 +285,23 @@
     background-repeat: no-repeat;
     height: 226vw;
     .mainInfo {
-      padding: 4.64vw;
+      padding: 1.93vw 3.91vw;
       .menu {
+        width: 92.7vw;
+        padding: 4.19vw 0;
         nav {
-          width: 57.51vw;
+          width: 52.51vw;
           .logo {
             font-size: 5.58vw;
+            text-shadow: 0px 0px 1.16vw var(--white);
           }
           a {
             font-size: 3.72vw;
           }
         }
         p {
-          font-size: 4.65vw;
+          font-size: 4.64vw;
+          text-shadow: 0px 0px 1.16vw var(--white);
         }
       }
       .container {
