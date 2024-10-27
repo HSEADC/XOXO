@@ -1,7 +1,371 @@
-h1 {
-  font-weight: 700;
+.index {
+  background-image: url(../images/background_main_blue.png);
+  background-size: 100%;
+  width: 100%;
+  height: 58.47vw;
+  .mainInfo {
+    width: 100%;
+    height: 100%;
+    padding: 0.69vw 2.78vw;
+
+    .menu {
+      width: 94.44vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.2vw 0;
+
+      nav {
+        width: 24.51vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2.78vw;
+        .logo {
+          font-size: 2.5vw;
+          color: var(--white);
+          text-decoration: none;
+          text-shadow: 0px 0px 0.35vw var(--white);
+          &:hover {
+            opacity: 0.7;
+            transition: 0.3s;
+          }
+        }
+        a {
+          font-size: 1.39vw;
+          font-weight: 800;
+          color: var(--white);
+          text-decoration: none;
+          letter-spacing: -0.04vw;
+          &:hover {
+            opacity: 0.7;
+            transition: 0.3s;
+          }
+        }
+      }
+      p {
+        font-size: 2.22vw;
+        font-weight: 800;
+        text-shadow: 0px 0px 5px var(--white);
+        color: var(--white);
+      }
+    }
+    .container {
+      width: 100%;
+      height: 45.5vw;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      h1 {
+        font-size: 5vw;
+        color: var(--white);
+        text-shadow: 0px 0px 0.35vw var(--white);
+        margin-top: 1.78vw;
+        text-align: center;
+      }
+      .text_about_media {
+        font-size: 1.67vw;
+        font-weight: 500;
+        display: flex;
+        text-align: center;
+        color: var(--white);
+        width: 29.61vw;
+      }
+      .block_form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        margin-top: 0;
+        .text_over_form {
+          font-size: 1.39vw;
+          font-weight: 800;
+          text-align: center;
+          color: var(--white);
+        }
+        form {
+          display: flex;
+          flex-direction: column;
+          align-content: center;
+          flex-wrap: nowrap;
+          gap: 0.69vw;
+          width: 23.19vw;
+          height: 7.22vw;
+          margin-top: 1.39vw;
+          input,
+          button {
+            width: 23.19vw;
+            height: 3.26vw;
+            top: 1.74vw;
+            border-radius: 1.04vw;
+            font-family: 'PPNeueMontreal', sans-serif;
+            font-weight: 800;
+            font-size: 1.11vw;
+            padding: 0.76vw;
+            text-align: center;
+          }
+          input {
+            border: 0.14vw solid var(--white);
+            border-color: var(--white);
+            color: var(--white);
+            background-color: transparent;
+            text-align: center;
+            outline: none;
+          }
+          #my-form-status {
+            font-size: 0.97vw;
+            color: var(--white);
+            text-align: center;
+          }
+          button {
+            border: none;
+            color: var(--blue);
+            background-color: var(--white);
+            box-shadow: 0px 0px 5px var(--white);
+            cursor: pointer;
+            transition: 0.8s;
+
+            &:hover {
+              opacity: 0.7;
+              transition: 0.3s;
+            }
+          }
+          ::placeholder {
+            color: var(--white);
+          }
+        }
+      }
+    }
+    .social {
+      width: 51.8vw;
+      font-size: 1.67vw;
+      text-align: center;
+      color: var(--white);
+      height: 5.82vw;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      text-shadow: 0px 0px 5px var(--white);
+      p {
+        text-align: center;
+        font-weight: 800;
+      }
+      .social_icons {
+        width: 7.4vw;
+        height: 3.26vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+
+        .tg_icon,
+        .vk_icon {
+          width: 3.26vw;
+          height: 3.26vw;
+          &:hover {
+            opacity: 0.7;
+            transition: 0.3s;
+          }
+        }
+        .tg_icon {
+          background-image: url(../images/telegram_icon.svg);
+          background-size: 100%;
+        }
+        .vk_icon {
+          background-image: url(../images/vk_icon.svg);
+          background-size: 100%;
+        }
+      }
+    }
+  }
 }
-p,
-a {
-  font-weight: 400;
+
+@media screen and (max-width: 1025px) {
+  .index {
+    background-image: url(../images/background_main_blue_tablet_2.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 130.8vw;
+
+    .mainInfo {
+      padding: 1.7vw 3.91vw;
+      .menu {
+        width: 92.19vw;
+        padding: 1.76vw 0;
+        nav {
+          width: 31.47vw;
+          .logo {
+            font-size: 3.52vw;
+          }
+          a {
+            font-size: 1.95vw;
+          }
+          p {
+            font-size: 3.13vw;
+          }
+        }
+      }
+
+      .container {
+        height: 102.94vw;
+        margin-top: 15.63vw;
+        flex-wrap: nowrap;
+        h1 {
+          font-size: 9.38vw;
+        }
+        .text_about_media {
+          font-size: 3.13vw;
+          width: 57.3vw;
+          margin-top: 9.77vw;
+        }
+        .block_form {
+          margin-top: 0;
+          .text_over_form {
+            font-size: 2.34vw;
+            margin-top: 6.84vw;
+          }
+          form {
+            width: 36.91vw;
+            height: 10.45vw;
+            gap: 1.46vw;
+            margin-top: 3.49vw;
+            input,
+            button {
+              width: 36.91vw;
+              height: 4.49vw;
+              border-radius: 1.46vw;
+              padding: 1.07vw 10.94vw;
+              font-size: 1.95vw;
+            }
+            input {
+              border: 0.29vw solid var(--white);
+            }
+            #my-form-status {
+              font-size: 1.95vw;
+            }
+          }
+        }
+      }
+      .social {
+        font-size: 2.34vw;
+        width: 56.32vw;
+        height: 10.37vw;
+        margin-top: 22.23vw;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.79vw;
+        .social_icons {
+          width: 12vw;
+          height: 5.37vw;
+          a {
+            width: 5.37vw;
+            height: 5.37vw;
+          }
+          .tg_icon,
+          .vk_icon {
+            width: 5.37vw;
+            height: 5.37vw;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 431px) {
+  .index {
+    background-image: url(../images/background_main_blue_mobile.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 217vw;
+    .mainInfo {
+      padding: 1.93vw 3.91vw;
+      .menu {
+        width: 92.7vw;
+        padding: 4.19vw 0;
+        nav {
+          width: 52.51vw;
+          .logo {
+            font-size: 5.58vw;
+            text-shadow: 0px 0px 1.16vw var(--white);
+          }
+          a {
+            font-size: 3.72vw;
+          }
+        }
+        p {
+          font-size: 4.64vw;
+          text-shadow: 0px 0px 1.16vw var(--white);
+        }
+      }
+      .container {
+        height: 115.81vw;
+        margin-top: 25vw;
+        flex-wrap: nowrap;
+        h1 {
+          font-size: 11vw;
+        }
+        .text_about_media {
+          font-size: 4.65vw;
+          width: 74.65vw;
+          margin-top: 26.7vw;
+        }
+        .block_form {
+          .text_over_form {
+            font-size: 3.72vw;
+            margin-top: 9.3vw;
+          }
+          form {
+            width: 82.09vw;
+            height: 23.26vw;
+            gap: 2.33vw;
+            margin-top: 3.49vw;
+            input,
+            button {
+              width: 82.09vw;
+              height: 10.47vw;
+              border-radius: 2.79vw;
+              padding: 2.09vw 22.09vw;
+              font-size: 3.72vw;
+            }
+            input {
+              border: 0.7vw solid var(--white);
+            }
+            #my-form-status {
+              font-size: 2.79vw;
+            }
+          }
+        }
+      }
+      .social {
+        font-size: 3.72vw;
+        width: 100%;
+        height: 19.77vw;
+        margin-top: 25.23vw;
+        margin-left: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.79vw;
+        .social_icons {
+          width: 23.98vw;
+          height: 13.26vw;
+          a {
+            width: 13.26vw;
+            height: 13.26vw;
+          }
+          .tg_icon,
+          .vk_icon {
+            width: 10.93vw;
+            height: 10.93vw;
+          }
+        }
+      }
+    }
+  }
 }

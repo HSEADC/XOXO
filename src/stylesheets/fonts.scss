@@ -4,7 +4,7 @@
     url('../fonts/PPNeueMontreal-Bold.woff') format('woff'),
     url('../fonts/PPNeueMontreal-Bold.otf') format('opentype');
   font-weight: 800;
-  font-style: bold;
+  font-style: normal;
 }
 @font-face {
   font-family: 'PPNeueMontreal';
@@ -28,7 +28,7 @@
     url('../fonts/PPNeueMontreal-Medium.woff') format('woff'),
     url('../fonts/PPNeueMontreal-Medium.otf') format('opentype');
   font-weight: 500;
-  font-style: medium;
+  font-style: normal;
 }
 
 @font-face {
@@ -37,5 +37,5 @@
     url('../fonts/PPNeueMontreal-Thin.woff') format('woff'),
     url('../fonts/PPNeueMontreal-Thin.otf') format('opentype');
   font-weight: 200;
-  font-style: thin;
+  font-style: normal;
 }
