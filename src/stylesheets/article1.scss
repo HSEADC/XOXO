@@ -163,37 +163,12 @@
           flex-direction: column;
           flex-wrap: nowrap;
           gap: 1.39vw;
-          .termin {
-            width: 26.81vw;
-            position: fixed;
-            background-color: var(--pink);
-            padding: 1.39vw;
-            border-radius: 0.69vw;
-            top: 50%;
-            left: 50%;
-            transform: translate(-75%, -50%);
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease;
-            z-index: 100;
-            p {
-              width: 26.81vw;
-              font-size: 1.39vw;
-              color: var(--white);
-            }
-          }
+
           .highlighted-word {
             position: relative;
             color: var(--pink);
             font-weight: 500;
             cursor: pointer;
-          }
-          .highlighted-word:hover ~ .termin {
-            opacity: 1;
-            visibility: visible;
-          }
-          .highlighted-word:hover ~ .article {
-            filter: blur(0.21vw);
           }
         }
         .hidden_block_text {
@@ -302,9 +277,33 @@
     }
   }
 }
+
+.termin {
+  width: auto;
+  position: absolute;
+  background-color: var(--pink);
+  padding: 1.39vw;
+  border-radius: 0.69vw;
+  top: 62.2vw;
+  left: 32%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 100;
+  p {
+    width: 21.81vw;
+    font-size: 1.39vw;
+    font-weight: 500;
+    color: var(--white);
+  }
+}
 .blur {
   filter: blur(0.21vw);
   transition: filter 0.3s ease;
+}
+.visible_termin {
+  opacity: 1;
+  visibility: visible;
 }
 
 @media screen and (max-width: 1025px) {
@@ -398,21 +397,6 @@
           }
           .visible_text {
             gap: 1.95vw;
-            .termin {
-              width: 26.81vw;
-              padding: 1.39vw; //исправить,  когда решу проблему с его  появлением
-              p {
-                width: 26.81vw;
-                font-size: 2.34vw;
-              }
-            }
-            .highlighted-word:hover ~ .termin {
-              opacity: 1;
-              visibility: visible;
-            }
-            .highlighted-word:hover ~ .article {
-              filter: blur(0.21vw);
-            }
           }
           .hidden_block_text {
             display: none;
@@ -496,6 +480,24 @@
       }
     }
   }
+  .termin {
+    padding: 1.95vw;
+    border-radius: 0.98vw;
+    top: 92.8vw;
+    left: 44%;
+    p {
+      width: 31.81vw;
+      font-size: 1.95vw;
+    }
+  }
+  .blur {
+    filter: blur(0.21vw);
+    transition: filter 0.3s ease;
+  }
+  .visible_termin {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 @media screen and (max-width: 431px) {
@@ -567,7 +569,7 @@
 
           .click_toggle {
             gap: 1.95vw;
-            margin-left: 3.7vw;
+            margin-left: 4.7vw;
             &:hover {
               opacity: 0.8;
               transition: 0.3s;
@@ -591,21 +593,6 @@
           }
           .visible_text {
             gap: 1.95vw;
-            .termin {
-              width: 26.81vw;
-              padding: 1.39vw; //исправить,  когда решу проблему с его  появлением
-              p {
-                width: 26.81vw;
-                font-size: 2.34vw;
-              }
-            }
-            .highlighted-word:hover ~ .termin {
-              opacity: 1;
-              visibility: visible;
-            }
-            .highlighted-word:hover ~ .article {
-              filter: blur(0.21vw);
-            }
           }
           .hidden_block_text {
             display: none;
@@ -628,7 +615,7 @@
         .text_last {
           width: 80.89vw;
           font-size: 3.72vw;
-          margin-left: 3.7vw;
+          margin-left: 4.7vw;
         }
       }
     }
@@ -688,5 +675,23 @@
         background-size: 100%;
       }
     }
+  }
+  .termin {
+    padding: 2.33vw;
+    border-radius: 2.33vw;
+    top: 127.8vw;
+    left: 30%;
+    p {
+      width: 32.81vw;
+      font-size: 3.72vw;
+    }
+  }
+  .blur {
+    filter: blur(0.21vw);
+    transition: filter 0.3s ease;
+  }
+  .visible_termin {
+    opacity: 1;
+    visibility: visible;
   }
 }
