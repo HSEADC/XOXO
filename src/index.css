@@ -5,3 +5,6 @@
 @import 'stylesheets/index.scss';
 @import 'stylesheets/article1.scss';
 @import 'stylesheets/about.scss';
+@import 'stylesheets/styleguide.scss';
+@import 'stylesheets/main.scss';
+@import 'stylesheets/test.scss';
