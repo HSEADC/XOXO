@@ -9,6 +9,8 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
+    toggleClick: './src/javascripts/toggleClick.js',
+    terminHover: './src/javascripts/terminHover.js',
   },
   output: {
     filename: '[name].js',
@@ -78,37 +80,60 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
+      chunks: ['index'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/main.html',
+      filename: './main.html',
+      chunks: ['index'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/styleguide.html',
+      filename: './styleguide.html',
+      chunks: ['index'],
     }),
     // Страницы разделов
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html',
+      chunks: ['index'],
     }),
     new HtmlWebpackPlugin({
       template: './src/tests.html',
       filename: './tests.html',
+      chunks: ['index'],
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: './about.html',
+      chunks: ['index'],
     }),
     new HtmlWebpackPlugin({
-      template: './src/wheel.html',
-      filename: './wheel.html',
+      template: './src/cards.html',
+      filename: './cards.html',
+      chunks: ['index'],
     }),
     // Страницы статей
     new HtmlWebpackPlugin({
-      template: './src/articles/extra-contraception.html',
-      filename: './articles/extra-contraception.html',
+      template: './src/articles/contraception/extra-contraception.html',
+      filename: './articles/contraception/extra-contraception.html',
+      chunks: ['index'],
     }),
     new HtmlWebpackPlugin({
-      template: './src/articles/article1.html',
-      filename: './articles/article1.html',
+      template: './src/articles/sex/article1.html',
+      filename: './articles/sex/article1.html',
+      chunks: ['index', 'toggleClick', 'terminHover'],
     }),
     // Страницы тестов
     new HtmlWebpackPlugin({
       template: './src/tests/test1.html',
       filename: './tests/test1.html',
+      chunks: ['index'],
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/tests/test2.html',
+      filename: './tests/test2.html',
+      chunks: ['index'],
     }),
 
     // Internal pages
