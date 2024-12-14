@@ -1,0 +1,214 @@
+.menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.875rem 2.5rem 3.125rem 2.5rem;
+    background: linear-gradient(180deg, #EC3396 0%, #FFF 93%);
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 5rem;
+      .logo {
+        background-image: url(../images/xoxo_logo.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        &:hover {
+          opacity: 0.7;
+          transition: 0.4s;
+        }
+      }
+      div{
+        display: flex;
+        gap: 0.6rem;
+        a {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: var(--black);
+        text-decoration: none;
+        letter-spacing: -0.04vw;
+        display: flex;
+        padding: 0.75rem 1.25rem;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--black);
+        background-color: var(--white);
+        &:hover {
+          color: var(--white);
+          background-color: var(--black);
+          transition: 0.4s;
+        }
+      }
+      }
+      
+    }
+  }
+.aboutUs{
+    padding: 1.875rem 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .cover_about{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        .title{  
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.6rem;
+            .title_gif{
+                background-image: url(../images/title_about.svg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                width: 43.75rem;
+                height: 34.75rem;
+            }
+            p{
+                font-size: 2.5rem;
+                color: var(--black);
+            }
+        }
+    }
+    .telling{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 1.8rem;
+        .title_2{
+            background-image: url(../images/title_2_about.svg);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 25.75rem;
+            height: 10.7rem;
+            z-index: 1;
+        }
+        
+            p{
+            font-size: 1.5rem;
+            color: var(--white);
+            border: 2px solid var(--black);
+            padding: 1.8rem;
+        }
+        .point1, .point2, .point3{
+            width: 27.5rem;
+            height: 7.375rem;
+            z-index: 10;
+        }
+        .point1{
+            background: var(--green);
+            transform: rotate(6deg);
+        }
+        .point2{
+            background: var(--pink);
+            margin-left: 12rem;
+        }
+        .point3{
+            background: var(--blue);
+            transform: rotate(-5deg);
+            margin-left: 20rem;
+        }
+        
+    }
+    .about_serials{
+        width: 100%;
+        .title_serials{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.625rem;
+            h1{
+                font-size: 4rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        .cards_serials{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 1.25rem;
+            height: 25rem;
+            margin-top: 1.7rem;
+            .swiper_about{
+               width: 32.5%;
+                height: 32rem;
+               .swiper{
+                height: 100%;
+                background-color: var(--pink);
+               }
+               .swiper-wrapper{
+                p{
+                    text-align: center;
+                    font-size: 2.5rem;
+                    color: var(--white);
+                }
+                .swiper-slide{
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                    padding: 1.875rem;
+                }
+                .category_1{
+                    background-image: url(../images/category_serial_1.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                }
+                .category_2{
+                    background-image: url(../images/category_serial_2.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                }
+                .category_3{
+                    background-image: url(../images/category_serial_3.png);
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                }
+                
+               }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .menu {
+        padding: 0.8rem 1.5rem 2.125rem 1.5rem;
+        nav {
+            gap: 5rem;
+            .logo {
+                width: 5.5rem;
+                height: 3rem;
+            }
+                div{
+                    gap: 0.6rem;
+                    a {
+                    font-size: 1.25rem;
+                    padding: 0.5rem 1rem;
+                }
+            }
+        }
+    }
+    .aboutUs{
+    padding: 0.8rem 1.5rem;
+    width: 100%;
+    .cover_about{
+        width: 100%;
+        .title{ 
+            .title_gif{
+                width: 35.8rem;
+                height: 28.4rem;
+            }
+            p{
+                font-size: 2rem;
+            }
+            
+        }
+    }
+}
+}
