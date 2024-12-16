@@ -11,7 +11,8 @@ module.exports = {
     index: './src/index.js',
     toggleClick: './src/javascripts/toggleClick.js',
     terminHover: './src/javascripts/terminHover.js',
-    swiper: './src/javascripts/swiper.js'
+    swiper: './src/javascripts/swiper.js',
+    swiperArticles: './src/javascripts/swiperArticles.js'
   },
   output: {
     filename: '[name].js',
@@ -97,7 +98,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index']
+      chunks: ['index', 'swiperArticles']
     }),
     new HtmlWebpackPlugin({
       template: './src/tests.html',

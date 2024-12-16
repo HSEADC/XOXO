@@ -1,0 +1,35 @@
+.articles_page{
+    padding: 1.875rem 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .swiper_articles{
+        width: 100%;
+        height: 32rem;
+        .swiper{
+            .swiper-wrapper{
+                .swiper-slide-articles{
+                h1{
+                    font-size: 4rem;
+                    color: var(--white);
+                }
+                .category_art_1, .category_art_2, .category_art_3{
+                background-repeat: no-repeat;
+                background-size: 100%;
+            }
+            .category_art_1{
+                background-image: url(../images/articles_cover_1.png);
+            }
+            .category_art_2{
+                background-image: url(../images/articles_cover_2.png);
+            }
+            .category_art_3{
+                background-image: url(../images/articles_cover_3.png);
+            }
+            }
+        }
+    }
+}
+
+}

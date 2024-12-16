@@ -36,20 +36,47 @@
     />
 
     <title>Статьи</title>
+        <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
   </head>
   <body>
-    <p><a href="/">На главную</a></p>
-    <h1>Статьи</h1>
+    <div class="menu">
+        <nav>
+          <a class="logo" href="./index.html">
+            <img src="/src/images/xoxo_logo.svg" alt="">
+          </a>
+          <div><a href="./articles.html">Статьи</a>
+            <a href="./tests.html">Тесты</a>
+            <a href="./cards.html">Карточки</a>
+          </div>
+        </nav>
+    </div>
+    <section class="articles_page">
+      <div class="swiper_articles">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide-articles category_art_1">
+              <h1>Почему презервативы — не 100% защита</h1>
+            </div>
+            <div class="swiper-slide-articles category_art_2">
+              <h1>Секс в необычных местах</h1>
+            </div>
+            <div class="swiper-slide-articles category_art_3">
+              <h1>Почему любовные интриги возбуждают?</h1>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <nav>
-      <a class="logo" href="../index.html">XOXO</a>
-      <a href="./about.html">О нас</a>
-      <a href="./articles.html">Статьи</a>
-      <a href="./tests.html">Тесты</a>
-      <a href="./cards.html">Карточки</a>
-      <a href="./styleguide.html">Стайлгайд</a>
-      <a href="./articles/sex/article1.html">Статья 1</a>
-      <a href="./articles/contraception/extra-contraception.html">Статья 2</a>
-    </nav>
+
   </body>
 </html>
