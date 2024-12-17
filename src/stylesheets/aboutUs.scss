@@ -434,6 +434,14 @@
   }
 }
 
+.burger-menu {
+  display: none;
+}
+
+.active {
+  display: block;
+}
+
 @media screen and (max-width: 1025px) {
   .menu {
     padding: 0.8rem 1.5rem 2.125rem 1.5rem;
@@ -469,7 +477,11 @@
     }
   }
 }
-@media screen and( max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
   div.menu-mobile {
     width: 100%;
     display: block;

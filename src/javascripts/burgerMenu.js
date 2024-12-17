@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
   const burgerMenu = document.querySelector('.burger-menu')
   const item = document.querySelector('.item-menu')
+  const content = document.querySelector('.menu-mobile')
 
   item.addEventListener('click', () => {
-    content.classList.add('.burger-menu')
+    burgerMenu.classList.add('active')
   })
-  item.addEventListener('click', () => {
-    content.classList.remove('.burger-menu')
-  })
+
+  if (burgerMenu.classList.has('active') == 1) {
+    item.addEventListener('click', () => {
+      burgerMenu.classList.remove('active')
+    })
+  }
 })

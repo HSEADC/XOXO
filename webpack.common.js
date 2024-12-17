@@ -13,7 +13,7 @@ module.exports = {
     terminHover: './src/javascripts/terminHover.js',
     swiper: './src/javascripts/swiper.js',
     swiperArticles: './src/javascripts/swiperArticles.js',
-    burgerMenu: '/src/javascripts/burgerMenu.js',
+    burgerMenu: './src/javascripts/burgerMenu.js',
   },
   output: {
     filename: '[name].js',
@@ -119,7 +119,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/aboutUs.html',
       filename: './aboutUs.html',
-      chunks: ['index', 'swiper'],
+      chunks: ['index', 'swiper', 'burgerMenu'],
     }),
     // Страницы статей
     new HtmlWebpackPlugin({
