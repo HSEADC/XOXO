@@ -806,62 +806,7 @@
       }
     }
   }
-  .footer {
-    width: 100%;
-    top: 6.94vw;
-    gap: 1.46vw;
-    border-radius: 1.04vw 1.04vw 0 0;
-    padding: 2.93vw 0 1.95vw 0;
-    background-color: var(--pink);
-    color: var(--white);
-    .logo_footer {
-      text-shadow: 0px 0px 0.49vw var(--white);
-      a {
-        text-decoration: none;
-        font-size: 2.5vw;
-        color: var(--white);
-        &:hover {
-          opacity: 0.7;
-          transition: 0.3s;
-        }
-      }
-      p {
-        font-size: 1.95vw;
-      }
-    }
-    .teg_link {
-      height: 3.91vw;
-      gap: 0.98vw;
-      p {
-        padding: 0.88vw;
-        border-radius: 0.59vw;
-      }
-    }
-    p {
-      font-size: 1.95vw;
-    }
-    .social_icons {
-      width: 13.5vw;
-      height: 5.86vw;
-      .tg_icon,
-      .vk_icon {
-        width: 5.86vw;
-        height: 5.86vw;
-        &:hover {
-          opacity: 0.7;
-          transition: 0.3s;
-        }
-      }
-      .tg_icon {
-        background-image: url(../images/telegram_icon.webp);
-        background-size: 100%;
-      }
-      .vk_icon {
-        background-image: url(../images/vk_icon.webp);
-        background-size: 100%;
-      }
-    }
-  }
+
 }
 
 @media screen and (max-width: 431px) {
@@ -1164,63 +1109,5 @@
       }
     }
   }
-  .footer {
-    width: 100%;
-    top: 6.94vw;
-    gap: 3.49vw;
-    border-radius: 2.33vw 2.33vw 0 0;
-    padding: 9.3vw 0 6.98vw 0;
-    .logo_footer {
-      text-shadow: 0px 0px 0.49vw var(--white);
 
-      a {
-        text-decoration: none;
-        font-size: 7.44vw;
-        &:hover {
-          opacity: 0.7;
-          transition: 0.3s;
-        }
-      }
-
-      p {
-        font-size: 3.72vw;
-      }
-    }
-    .teg_link {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      height: 33.2vw;
-      gap: 1.86vw;
-      p {
-        font-size: 3.72vw;
-        padding: 1.63vw;
-        border-radius: 1.16vw;
-      }
-    }
-    p {
-      font-size: 3.72vw;
-    }
-    .social_icons {
-      width: 20.56vw;
-      height: 9.3vw;
-      .tg_icon,
-      .vk_icon {
-        width: 9.3vw;
-        height: 9.3vw;
-        &:hover {
-          opacity: 0.7;
-          transition: 0.3s;
-        }
-      }
-      .tg_icon {
-        background-image: url(../images/telegram_icon.webp);
-        background-size: 100%;
-      }
-      .vk_icon {
-        background-image: url(../images/vk_icon.webp);
-        background-size: 100%;
-      }
-    }
-  }
 }
