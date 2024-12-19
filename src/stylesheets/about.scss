@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   gap: 2.08vw;
-  .menu {
+  .menu_2 {
     width: 94.44vw;
     display: flex;
     justify-content: space-between;
@@ -490,7 +490,7 @@
 @media screen and (max-width: 1025px) {
   .about {
     padding: 1.7vw 3.91vw;
-    .menu {
+    .menu_2 {
       width: 92.19vw;
       padding: 1.76vw 0;
       nav {
@@ -812,7 +812,7 @@
 @media screen and (max-width: 431px) {
   .about {
     padding: 1.93vw 3.91vw;
-    .menu {
+    .menu_2 {
       width: 92.7vw;
       padding: 4.19vw 0;
       nav {
