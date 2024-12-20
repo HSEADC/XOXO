@@ -390,7 +390,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 0.6rem;
-    p {
+    a {
       font-size: 1.5rem;
       color: var(--black);
       display: flex;
@@ -399,6 +399,7 @@
       align-items: center;
       border: 2px solid var(--black);
       background-color: var(--white);
+      text-decoration: none;
       &:hover {
         color: var(--white);
         background-color: var(--black);
@@ -419,17 +420,19 @@
       width: 3rem;
       height: 3rem;
       &:hover {
-        opacity: 0.7;
+        opacity: 0.8;
         transition: 0.3s;
       }
     }
     .tg_icon {
-      background-image: url(../images/telegram_icon.webp);
+      background-image: url(../images/telegram_icon.svg);
       background-size: 100%;
+      background-repeat: no-repeat;
     }
     .vk_icon {
-      background-image: url(../images/vk_icon.webp);
+      background-image: url(../images/vk_icon.svg);
       background-size: 100%;
+      background-repeat: no-repeat;
     }
   }
 }
