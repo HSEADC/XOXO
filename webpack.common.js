@@ -14,11 +14,13 @@ module.exports = {
     swiper: './src/javascripts/swiper.js',
     swiperArticles: './src/javascripts/swiperArticles.js',
     burgerMenu: './src/javascripts/burgerMenu.js',
+    terminClick: './src/javascripts/terminClick.js',
+    preloader: './src/javascripts/preloader.js'
   },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'docs'),
-    clean: true,
+    clean: true
   },
   module: {
     rules: [
@@ -29,9 +31,9 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             presets: ['@babel/preset-env', '@babel/preset-react'],
-            plugins: ['@babel/plugin-proposal-class-properties'],
-          },
-        },
+            plugins: ['@babel/plugin-proposal-class-properties']
+          }
+        }
       },
       {
         test: /\.(sa|sc|c)ss$/i,
@@ -42,106 +44,111 @@ module.exports = {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [['postcss-preset-env']],
-              },
-            },
+                plugins: [['postcss-preset-env']]
+              }
+            }
           },
-          'sass-loader',
-        ],
+          'sass-loader'
+        ]
       },
       {
         test: /\.html$/i,
-        loader: 'html-loader',
+        loader: 'html-loader'
       },
       {
         resourceQuery: /raw/,
-        type: 'asset/source',
+        type: 'asset/source'
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|webp)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[hash][ext][query]',
-        },
+          filename: 'images/[hash][ext][query]'
+        }
       },
       {
         test: /\.(ttf|otf|woff|woff2|eot)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'fonts/[hash][ext][query]',
-        },
-      },
-    ],
+          filename: 'fonts/[hash][ext][query]'
+        }
+      }
+    ]
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: '[name].css',
-      chunkFilename: '[id].css',
+      chunkFilename: '[id].css'
     }),
 
     // Index
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      chunks: ['index', 'burgerMenu'],
+      chunks: ['index', 'burgerMenu']
     }),
     new HtmlWebpackPlugin({
       template: './src/main.html',
       filename: './main.html',
-      chunks: ['index'],
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html',
-      chunks: ['index'],
+      chunks: ['index']
     }),
     // Страницы разделов
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index', 'swiperArticles'],
+      chunks: ['index', 'swiperArticles']
     }),
     new HtmlWebpackPlugin({
       template: './src/tests.html',
       filename: './tests.html',
-      chunks: ['index'],
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/about.html',
       filename: './about.html',
-      chunks: ['index'],
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/cards.html',
       filename: './cards.html',
-      chunks: ['index'],
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/aboutUs.html',
       filename: './aboutUs.html',
-      chunks: ['index', 'swiper', 'burgerMenu'],
+      chunks: ['index', 'swiper', 'burgerMenu']
     }),
     // Страницы статей
     new HtmlWebpackPlugin({
       template: './src/articles/contraception/extra-contraception.html',
       filename: './articles/contraception/extra-contraception.html',
-      chunks: ['index'],
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/sex/article1.html',
       filename: './articles/sex/article1.html',
-      chunks: ['index', 'toggleClick', 'terminHover'],
+      chunks: ['index', 'toggleClick', 'terminHover']
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/articles/sex/article2.html',
+      filename: './articles/sex/article2.html',
+      chunks: ['index', 'terminClick', 'burgerMenu', 'preloader']
     }),
     // Страницы тестов
     new HtmlWebpackPlugin({
       template: './src/tests/test1.html',
       filename: './tests/test1.html',
-      chunks: ['index'],
+      chunks: ['index']
     }),
     new HtmlWebpackPlugin({
       template: './src/tests/test2.html',
       filename: './tests/test2.html',
-      chunks: ['index'],
+      chunks: ['index']
     }),
 
     // Internal pages
@@ -159,11 +166,11 @@ module.exports = {
         path: path.join(__dirname, './src/partials/footer.html'),
         location: 'footerPartial',
         template_filename: '*',
-        priority: 'replace',
-      },
-    ]),
+        priority: 'replace'
+      }
+    ])
   ],
   optimization: {
-    minimizer: [new CssMinimizerPlugin()],
-  },
+    minimizer: [new CssMinimizerPlugin()]
+  }
 }
