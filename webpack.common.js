@@ -12,7 +12,6 @@ module.exports = {
     toggleClick: './src/javascripts/toggleClick.js',
     terminHover: './src/javascripts/terminHover.js',
     swiper: './src/javascripts/swiper.js',
-    swiperArticles: './src/javascripts/swiperArticles.js',
     burgerMenu: './src/javascripts/burgerMenu.js',
     terminClick: './src/javascripts/terminClick.js',
     preloader: './src/javascripts/preloader.js'
@@ -101,12 +100,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/articles.html',
       filename: './articles.html',
-      chunks: ['index', 'swiperArticles']
+      chunks: ['index', 'burgerMenu']
     }),
     new HtmlWebpackPlugin({
       template: './src/tests.html',
       filename: './tests.html',
-      chunks: ['index']
+      chunks: ['index', 'burgerMenu']
     }),
     new HtmlWebpackPlugin({
       template: './src/cards.html',
