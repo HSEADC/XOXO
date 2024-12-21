@@ -616,6 +616,10 @@
                 font-size: 1.25rem;
             }
         }
+        .blur {
+            filter: blur(0.5vw);
+            transition: filter 0.3s ease;
+        }
   .footer {
     margin-top: 2.5rem;
   .teg_link {
