@@ -272,7 +272,7 @@
               background: var(--blue);
             }
           }
-          p {
+          h1 {
             font-size: 2.5rem;
             color: var(--black);
           }
@@ -556,7 +556,7 @@
               padding: 0.5rem 1rem;
             }
           }
-          p {
+          h1 {
             font-size: 2rem;
           }
         }
@@ -771,6 +771,12 @@
         align-items: center;
         border: 2px solid var(--black);
         background: var(--white);
+        cursor: pointer;
+        &:hover {
+                color: var(--white);
+                background-color: var(--black);
+                transition: 0.4s;
+            }
     }
     .active{
         display: flex;
@@ -790,6 +796,7 @@
             border: 2px solid var(--black);
             color: var(--black);
             background: var(--white);
+            cursor: pointer;
             &:hover {
                 color: var(--white);
                 background-color: var(--black);

@@ -1,0 +1,172 @@
+.tests_page{
+    padding: 1.875rem 2.5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    .tests_block{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 1.25rem;
+        h1 {
+            font-size: 4rem;
+            color: var(--black);
+        }
+        .cards_test{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.25rem;
+            .card_test{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                border: 2px solid var(--black);
+                .title_test{
+                    width: 50%;
+                    display: flex;
+                    padding: 1.25rem;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    gap: 1.25rem;
+                    .name_test_1{
+                        width: 41.57vw;
+                        height: 25.3vw;
+                        background-image: url(../images/test_title_1.svg);
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        
+                    }
+                    .name_test_2{
+                        width: 41.57vw;
+                        height: 25.3vw;
+                        background-image: url(../images/test_title_2.svg);
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                    }
+                    p{
+                        color: var(--black);
+                        font-size: 1.5rem;
+                    }
+                    button{
+                        width: 100%;
+                        display: flex;
+                        padding: 1.25rem 2rem;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 0.625rem;
+                        border: 2px solid var(--black);
+                        background: var(--pink);
+                        color: var(--white);
+                        text-align: center;
+                        font-size: 1.5rem;
+                        &:hover {
+                            opacity: 0.7;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+                img{
+                    width: 50%;
+                    object-fit: cover;
+                    background-clip: padding-box;
+                    object-position: left top;
+                }
+                .test_cover{
+                    width: 50%;
+                    object-fit: cover;
+                    background-clip: padding-box;
+                    object-position: center;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1025px){
+    .tests_page{
+        padding: 0.8rem 1.5rem;
+        gap: 3rem;
+        .tests_block{
+        gap: 2rem;
+        h1 {
+            font-size: 3rem;
+        }
+        .cards_test{
+            gap: 1rem;
+            .card_test{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                
+                .title_test{
+                    padding: 1rem;
+                    gap: 1rem;
+                    .name_test_1{
+                        width: 41.57vw;
+                        height: 25.19vw;
+                    }
+                    .name_test_2{
+                        width: 41.57vw;
+                        height: 25.19vw;
+                    }
+                    p{
+                        font-size: 1.25rem;
+                    }
+                    button{
+                        padding: 1rem 1.25rem;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+    }
+}
+@media screen and (max-width: 700px){
+    .tests_page{
+        padding: 0.8rem 1.25rem;
+        gap: 2.5rem;
+        .tests_block{
+        gap: 2rem;
+        h1 {
+            font-size: 1.75rem;
+        }
+        .cards_test{
+            gap: 1rem;
+            .card_test{
+                flex-direction: column;
+                align-items: center;
+                padding: 1.25rem;
+                gap: 1rem;
+                .title_test{
+                    width: 100%;
+                    padding: 0rem;
+                    gap: 0.5rem;
+                    .name_test_1{
+                        width: 100%;
+                        height: 53.19vw;
+                    }
+                    .name_test_2{
+                        width: 100%;
+                        height: 53.19vw;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                    button{
+                        padding: 0.6rem 1rem;
+                        font-size: 1rem;
+                    }
+                }
+                img, .test_cover{
+                    width: 100%;
+                    
+                }
+            }
+        }
+    }
+    }
+}

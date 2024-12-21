@@ -105,7 +105,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/tests.html',
       filename: './tests.html',
-      chunks: ['index']
+      chunks: ['index', 'burgerMenu']
     }),
     new HtmlWebpackPlugin({
       template: './src/cards.html',
