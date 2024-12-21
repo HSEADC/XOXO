@@ -39,3 +39,22 @@
   font-weight: 200;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'PPPangramSans';
+  src: url('../fonts/PPPangramSans-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PPPangramSans';
+  src: url('../fonts/PPPangramSans-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'helvetica';
+  src: url('../fonts/helvetica_bold.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
