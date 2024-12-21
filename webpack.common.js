@@ -109,11 +109,6 @@ module.exports = {
       chunks: ['index']
     }),
     new HtmlWebpackPlugin({
-      template: './src/about.html',
-      filename: './about.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
       template: './src/cards.html',
       filename: './cards.html',
       chunks: ['index']
@@ -128,11 +123,6 @@ module.exports = {
       template: './src/articles/contraception/extra-contraception.html',
       filename: './articles/contraception/extra-contraception.html',
       chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
-      template: './src/articles/sex/article1.html',
-      filename: './articles/sex/article1.html',
-      chunks: ['index', 'toggleClick', 'terminHover']
     }),
     new HtmlWebpackPlugin({
       template: './src/articles/sex/article2.html',
