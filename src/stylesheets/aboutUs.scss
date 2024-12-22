@@ -158,6 +158,9 @@
       .gallery_2{
         margin-left: 20rem;
       }
+      .gallery_4, .gallery_5, .gallery_6{
+        display: none;
+      }
     }
     .lock_icon{
       width: 13rem;
@@ -266,7 +269,7 @@
         width: 15vw;
         height: auto;
       }
-      img{
+      .qr{
         width: 18vw;
         height: auto;
       }
@@ -414,6 +417,45 @@
   display: block;
 }
 
+@media screen and (max-width: 1440px){
+  .aboutUs{
+    .cover_about {
+    .title {
+      .title_aboutUs {
+        width: 70.85vw;
+        height: 33.86vw;
+      }
+    }
+    .points_block{
+    .points{
+      p {
+      font-size: 1.25rem;
+      padding: 1.5rem;
+    }
+    .point1 {
+      left: 4vw;
+      top: 37vw;
+    }
+    .point2 {
+      top: 44vw;
+      left: 12vw;
+    }
+    .point3 {
+      left: 58vw;
+      top: 38vw;
+    }
+    .point4 {
+      transform: rotate(0deg);
+      left: 54vw;
+      top: 45vw;
+    }
+  }
+    }
+
+    }
+  }
+}
+
 @media screen and (max-width: 1025px) {
   .menu {
     padding: 0.8rem 1.5rem 2.125rem 1.5rem;
@@ -436,48 +478,44 @@
   }
   .aboutUs {
     padding: 0.8rem 1.5rem;
+    gap: 3rem;
     .cover_about {
       .title {
-        .title_gif {
-            width: 32.8rem;
-            height: 26.4rem;
+        .title_aboutUs {
+            width: 36.8rem;
+            height: 32vw;
         }
         p {
-          font-size: 1.8rem;
+          font-size: 1.5rem;
         }
       }
+      .points_block{
+          .points{
+            p {
+              font-size: 1rem;
+              padding: 1.25rem;
+            }
+            .point1 {
+              left: 4vw;
+              top: 31vw;
+            }
+            .point2 {
+              top: 38vw;
+              left: 12vw;
+            }
+            .point3 {
+              left: 58vw;
+              top: 31vw;
+            }
+            .point4 {
+              left: 54vw;
+              top: 38vw;
+            }
+          }
+        }
     }
-    .telling {
-        height: 33vw;
-        margin-top: 1.8rem;
-    .title_2 {
-      width: 25.75rem;
-      height: 10.7rem;
-    }
-    p {
-      padding: 1.8rem;
-    }
-    .point1,
-    .point2,
-    .point3 {
-        height: 7rem;
-        width: 26rem;
-    }
-
-    .point1 {
-        top: 41%;
-        left: 4%;
-    }
-    .point2 {
-        top: 73%;
-        left: 10%;
-    }
-    .point3 {
-        top: 40%;
-        left: 50%;
-    }
-  }
     .about_serials {
+      height: 35.5rem;
     .title_serials {
       h1 {
         font-size: 3rem;
@@ -485,6 +523,28 @@
       p {
         font-size: 1.5rem;
       }
+    }
+    .gallery {
+      width: 97.9%;
+      .gallery_1, .gallery_2, .gallery_3{
+        img{
+          width: 21rem;
+          height: 8rem;
+            
+        }
+      }
+      .gallery_1{
+        margin-left: 21rem;
+      }
+      .gallery_2{
+        margin-left: 8rem;
+      }
+    }
+    .lock_icon{
+      width: 8rem;
+        height: 10rem;
+        margin-top: 9rem;
+        margin-left: 2rem;
     }
     .cards_serials {
         gap: 1rem;
@@ -528,23 +588,20 @@
     }
   }
   .about_community {
-    gap: 2.7rem;
+    gap: 2rem;
     h1 {
       font-size: 3rem;
     }
     .community_block {
-      gap: 3rem;
+      gap: 2rem;
       .first_post {
-        width: 12rem;
-        height: auto;
+        width: 11rem;
       }
-      img{
-        width: 15rem;
-        height: auto;
+      .qr{
+        width: 14rem;
       }
       .second_post {
-        width: 12rem;
-        height: auto;
+        width: 11rem;
       }
     }
   }
@@ -567,15 +624,16 @@
       font-size: 3rem;
     }
     .comand_block {
-      gap: 4rem;
+      gap: 3rem;
       .ira_about,
       .dasha_about,
       .vika_about {
-        width: 20%;
-        gap: 1.25rem;
+        width: 30%;
+        gap: 1rem;
 
       }
       .ira_about{
+        width: 100%;
         .ira_photo {
         border-radius: 14rem;
         width: 100%;
@@ -585,6 +643,7 @@
       }
     }
       .dasha_about{
+        width: 100%;
         .dasha_photo {
         border-radius: 14rem;
         width: 100%;
@@ -594,6 +653,7 @@
       }
       }
       .vika_about{
+        width: 100%;
         .vika_photo {
         border-radius: 14rem;
         width: 100%;
@@ -605,7 +665,7 @@
       
     }
   }
-  }
+}
   .footer {
   .teg_link {
     flex-wrap: wrap;
@@ -632,70 +692,6 @@
 }
 }
 
-
-
-@media screen and (max-width: 768px) {
-.aboutUs{
-    .cover_about{
-        .title{
-            .title_gif{
-                width: 28rem;
-                height: 22.4rem;
-            }
-        }
-    }
-    .telling {
-    height: 58vw;
-    margin-top: 1.8rem;
-    .title_2 {
-      width: 25.75rem;
-      height: 10.7rem;
-    }
-    p {
-      font-size: 1.5rem;
-      padding: 1.8rem;
-    }
-    .point1,
-    .point2,
-    .point3 {
-        height: 7rem;
-        width: 26rem;
-    }
-
-    .point1 {
-        top: 31%;
-        left: 4%;
-    }
-    .point2 {
-        top: 77%;
-        left: 10%;
-    }
-    .point3 {
-        top: 53%;
-        left: 38%;
-    }
-  }
-    .about_serials {
-    .title_serials {
-      p {
-        font-size: 1.25rem;
-      }
-    }
-    .cards_serials {
-      .swiper_about {
-        .swiper-wrapper {
-          p {
-            font-size: 1.25rem;
-          }
-          .swiper-slide {
-            padding: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-}
-}
 
 @media screen and (max-width: 700px) {
   .menu {
@@ -783,19 +779,192 @@
     padding: 0.8rem 1.25rem;
     width: 100%;
     .cover_about {
-      width: 100%;
       .title {
-        .title_gif {
-            width: 25.8rem;
-            height: 21.4rem;
+        .title_aboutUs {
+            width: 81.21vw;
+            height: 109.05vw;
+            background-image: url(/src/images/cover_aboutus_mobile.svg);
         }
         p {
-          font-size: 2rem;
+          font-size: 1rem;
+        }
+      }
+      .points_block{
+        display: none;
+      }
+    }
+    .about_serials {
+      height: 59rem;
+    .title_serials {
+      h1 {
+        font-size: 1.75rem;
+      }
+      p {
+        font-size: 1.5rem;
+      }
+    }
+    .gallery {
+      width: 97.9%;
+      gap: 0.4rem;
+      margin-top: 1rem;
+      .gallery_1, .gallery_2, .gallery_3, .gallery_4, .gallery_5, .gallery_6{
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        img{
+          width: 18rem;
+          height: 7.8rem;
+        }
+      }
+      .gallery_1{
+        margin-left: 7rem;
+      }
+      .gallery_2{
+        margin-left: 2rem;
+      }
+      .gallery_4{
+        margin-left: -12rem;
+      }
+      .gallery_5{
+        margin-left: -10rem;
+      }
+      .gallery_6{
+        margin-left: 0rem;
+      }
+    }
+    .lock_icon{
+      display: none;
+    }
+    .cards_serials {
+        gap: 1rem;
+      .swiper_about {
+        width: 32%;
+        .swiper-wrapper {
+          p {
+            font-size: 2rem;
+          }
+          
         }
       }
     }
   }
-    .footer {
+    .about_articles {
+        h1 {
+            font-size: 1.75rem;
+        }
+    .article_about_block {
+      flex-direction: column;
+        gap: 1.5rem;
+      .article_about {
+        min-height: auto;
+        gap: 0.7rem;
+        width: 100%;
+        .cover_article_1,
+        .cover_article_2 {
+          height: 50vw;
+        }
+        .title_article {
+          gap: 0.5rem;
+          .tegs {
+            .article_category_1,
+            .article_category_2 {
+              font-size: 1rem;
+              padding: 0.4rem 0.8rem;
+            }
+          }
+          h1 {
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+  .about_community {
+    gap: 2rem;
+    h1 {
+      font-size: 1.75rem;
+    }
+    .community_block {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 0rem;
+      .first_post {
+        width: 10rem;
+        margin-top: 4rem;
+      }
+      .qr{
+        display: none;
+      }
+      .second_post {
+        width: 10rem;
+      }
+    }
+  }
+  .about_sleng {
+    h1 {
+        font-size: 1.75rem;
+    }
+    .sleng_block {
+      flex-direction: column;
+        gap: 1rem;
+        .sleng_about_1, .sleng_about_2{
+          width: 100%;
+            img{
+                height: 30vw;
+            }
+        }
+    }
+}
+  .about_comand {
+    gap: 2rem;
+    h1 {
+      font-size: 1.75rem;
+    }
+    .comand_block {
+      flex-direction: column;
+      gap: 3rem;
+      .ira_about,
+      .dasha_about,
+      .vika_about {
+        width: 30%;
+        gap: 1rem;
+
+      }
+      .ira_about{
+        width: 100%;
+        .ira_photo {
+        border-radius: 14rem;
+        width: 80%;
+      }
+        .name_ira{
+        width: 30%;
+      }
+    }
+      .dasha_about{
+        width: 100%;
+        .dasha_photo {
+        border-radius: 14rem;
+        width: 80%;
+      }
+        .name_dasha{
+        width: 30%;
+      }
+      }
+      .vika_about{
+        width: 100%;
+        .vika_photo {
+        border-radius: 14rem;
+        width: 80%;
+      }
+        .name_vika{
+        width: 30%;
+      }
+      }
+      
+    }
+  }
+}
+.footer {
     margin-top: 0rem;
   .teg_link {
     flex-direction: column;
@@ -821,3 +990,5 @@
   }
 }
 }
+    
+
