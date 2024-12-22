@@ -87,11 +87,6 @@ module.exports = {
       chunks: ['index', 'burgerMenu']
     }),
     new HtmlWebpackPlugin({
-      template: './src/main.html',
-      filename: './main.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html',
       chunks: ['index']
