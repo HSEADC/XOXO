@@ -9,9 +9,6 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    toggleClick: './src/javascripts/toggleClick.js',
-    terminHover: './src/javascripts/terminHover.js',
-    swiper: './src/javascripts/swiper.js',
     burgerMenu: './src/javascripts/burgerMenu.js',
     terminClick: './src/javascripts/terminClick.js',
     preloader: './src/javascripts/preloader.js'
@@ -110,7 +107,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/aboutUs.html',
       filename: './aboutUs.html',
-      chunks: ['index', 'swiper', 'burgerMenu']
+      chunks: ['index', 'burgerMenu']
     }),
     // Страницы статей
     new HtmlWebpackPlugin({
