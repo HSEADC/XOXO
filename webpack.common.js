@@ -9,12 +9,10 @@ const path = require('path')
 module.exports = {
   entry: {
     index: './src/index.js',
-    toggleClick: './src/javascripts/toggleClick.js',
-    terminHover: './src/javascripts/terminHover.js',
-    swiper: './src/javascripts/swiper.js',
     burgerMenu: './src/javascripts/burgerMenu.js',
     terminClick: './src/javascripts/terminClick.js',
-    preloader: './src/javascripts/preloader.js'
+    preloader: './src/javascripts/preloader.js',
+    flipCard: './src/javascripts/flipCard.js'
   },
   output: {
     filename: '[name].js',
@@ -87,14 +85,9 @@ module.exports = {
       chunks: ['index', 'burgerMenu']
     }),
     new HtmlWebpackPlugin({
-      template: './src/main.html',
-      filename: './main.html',
-      chunks: ['index']
-    }),
-    new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html',
-      chunks: ['index']
+      chunks: ['index', 'burgerMenu']
     }),
     // Страницы разделов
     new HtmlWebpackPlugin({
@@ -110,12 +103,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/cards.html',
       filename: './cards.html',
-      chunks: ['index']
+      chunks: ['index', 'flipCard', 'burgerMenu']
     }),
     new HtmlWebpackPlugin({
       template: './src/aboutUs.html',
       filename: './aboutUs.html',
-      chunks: ['index', 'swiper', 'burgerMenu']
+      chunks: ['index', 'burgerMenu']
     }),
     // Страницы статей
     new HtmlWebpackPlugin({

@@ -55,6 +55,7 @@
                 width: 32.5%;
                 text-decoration: none;
                 .card{
+                    min-height: 22rem;
                     display: flex;
                     padding-bottom: 1.25rem;
                     flex-direction: column;
@@ -63,6 +64,9 @@
                     text-decoration: none;
                 img{
                     width: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    min-height: 25rem;
                 }
                 .title_card_1_type{
                     display: flex;
@@ -292,7 +296,7 @@
                 width: 100%;
             }
                 .card_popular{
-                    padding: 1.5rem;
+                    padding: 1rem;
                     height: 37.5rem;
                     gap: 0.6rem;
                     .title_card_1_type{
