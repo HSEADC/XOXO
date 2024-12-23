@@ -87,7 +87,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html',
-      chunks: ['index', 'burgerMenu']
+      chunks: ['index']
     }),
     // Страницы разделов
     new HtmlWebpackPlugin({
