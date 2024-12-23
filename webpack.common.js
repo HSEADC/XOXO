@@ -11,7 +11,8 @@ module.exports = {
     index: './src/index.js',
     burgerMenu: './src/javascripts/burgerMenu.js',
     terminClick: './src/javascripts/terminClick.js',
-    preloader: './src/javascripts/preloader.js'
+    preloader: './src/javascripts/preloader.js',
+    flipCard: './src/javascripts/flipCard.js'
   },
   output: {
     filename: '[name].js',
@@ -102,7 +103,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/cards.html',
       filename: './cards.html',
-      chunks: ['index']
+      chunks: ['index', 'flipCard']
     }),
     new HtmlWebpackPlugin({
       template: './src/aboutUs.html',
