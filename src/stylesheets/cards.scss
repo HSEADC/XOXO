@@ -174,6 +174,111 @@
         transform: rotateY(180deg);
     }
 }
+} 
 }
-    
-}
+@media screen and (max-width: 1025px){
+    .cards_page{
+        padding: 0.8rem 1.5rem;
+        gap: 3rem;
+        h1{
+            font-size: 3rem;
+        }
+        .cards_column{
+            flex-direction: column;
+                .cards_block {
+                    width: 100%;
+                    .sleng_1, .sleng_3, .sleng_4, .sleng_5, .sleng_6, .sleng_8 {
+                        height: 29.5vw;
+                        .card__face {
+                            height: 29.5vw;
+                        }
+                        .card__face--back {
+                            gap: 1rem;
+                            h1{
+                                font-size: 1.5rem;
+                            }
+                            p{
+                                font-size: 1.25rem;
+                                padding: 1.25rem 1.5rem;
+                            }
+                        }
+                    }
+                    .sleng_2, .sleng_7 {
+                        height: 48.25vw;
+                        .card__face {
+                            height: 48.25vw;
+                        }
+                        .card__face--back {
+                            gap: 1rem;
+                            h1{
+                                font-size: 1.5rem;
+                            }
+                            .example_1, .example_2{
+                                font-size: 1.25rem;
+                                padding: 1.25rem 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+@media screen and (max-width: 700px){
+    .cards_page{
+        padding: 0.8rem 1.25rem;
+        gap: 2.5rem;
+        h1{
+            font-size: 1.75rem;
+        }
+        .cards_column{
+            flex-direction: column;
+            gap: 1rem;
+                .cards_block {
+                    gap: 1rem;
+                    .sleng_1, .sleng_3, .sleng_4, .sleng_5, .sleng_6, .sleng_8 {
+                        height: 42.5vw;
+                        .card__face {
+                            height: 42.5vw;
+                        }
+                        .card__face--front{
+                            img{
+                                width: 65%;
+                            }
+                        }
+                        .card__face--back {
+                            gap: 0.5rem;
+                            h1{
+                                font-size: 1.25rem;
+                            }
+                            p{
+                                font-size: 1rem;
+                                padding: 1rem 1.25rem;
+                            }
+                        }
+                    }
+                    .sleng_2, .sleng_7 {
+                        height: 63.25vw;
+                        .card__face {
+                            height: 63.25vw;
+                        }
+                        .card__face--front{
+                            img{
+                                width: 65%;
+                            }
+                        }
+                        .card__face--back {
+                            gap: 0.5rem;
+                            h1{
+                                font-size: 1.25rem;
+                            }
+                            .example_1, .example_2{
+                                font-size: 1rem;
+                                padding: 1rem 1.25rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }

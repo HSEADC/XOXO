@@ -87,7 +87,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/styleguide.html',
       filename: './styleguide.html',
-      chunks: ['index']
+      chunks: ['index', 'burgerMenu']
     }),
     // Страницы разделов
     new HtmlWebpackPlugin({
@@ -103,7 +103,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/cards.html',
       filename: './cards.html',
-      chunks: ['index', 'flipCard']
+      chunks: ['index', 'flipCard', 'burgerMenu']
     }),
     new HtmlWebpackPlugin({
       template: './src/aboutUs.html',
