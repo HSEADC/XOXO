@@ -9,7 +9,7 @@
         font-size: 4rem;
     }
     .cards_column{
-    width: 100%;
+      width: 100%;
       height: 100%;
       display: flex;
       flex-direction: row;
@@ -148,13 +148,13 @@
             }
         }
       }
-      .sleng_2.is-flipped {
+
+    .sleng_2.is-flipped {
         transform: rotateY(180deg);
     }
       .sleng_1.is-flipped {
         transform: rotateY(180deg);
     }
-    
     .sleng_3.is-flipped {
         transform: rotateY(180deg);
     }
