@@ -17,7 +17,7 @@
       }
       &:hover {
         opacity: 0.7;
-        transition: 0.4s;
+        transition: 0.5s;
       }
     }
     div {
@@ -38,7 +38,7 @@
         &:hover {
           color: var(--white);
           background-color: var(--black);
-          transition: 0.4s;
+          transition: 0.5s;
         }
       }
     }
@@ -375,7 +375,7 @@
       &:hover {
         color: var(--white);
         background-color: var(--black);
-        transition: 0.4s;
+        transition: 0.5s;
       }
     }
   }
@@ -393,7 +393,7 @@
       height: 3rem;
       &:hover {
         opacity: 0.8;
-        transition: 0.3s;
+        transition: 0.5s;
       }
     }
     .tg_icon {
@@ -685,7 +685,7 @@
       height: 3rem;
       &:hover {
         opacity: 0.7;
-        transition: 0.3s;
+        transition: 0.5s;
       }
     }
   }
@@ -732,11 +732,6 @@
         border: 2px solid var(--black);
         background: var(--white);
         cursor: pointer;
-        &:hover {
-                color: var(--white);
-                background-color: var(--black);
-                transition: 0.4s;
-            }
     }
     .active{
         display: flex;
@@ -757,11 +752,6 @@
             color: var(--black);
             background: var(--white);
             cursor: pointer;
-            &:hover {
-                color: var(--white);
-                background-color: var(--black);
-                transition: 0.4s;
-            }
         }
     }
     
@@ -982,13 +972,7 @@
     .vk_icon {
       width: 3rem;
       height: 3rem;
-      &:hover {
-        opacity: 0.7;
-        transition: 0.3s;
-      }
     }
   }
 }
 }
-    
-

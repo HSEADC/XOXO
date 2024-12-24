@@ -75,6 +75,7 @@ body.styleGuide{
             flex-direction: column;
             padding-left: 20vw;
             gap: 2.5rem;
+            margin-bottom: 3.17vw;
             .heading{
                 width: 100%;
                 display: flex;
@@ -176,13 +177,12 @@ body.styleGuide{
                     }
                 }
             }
-        }
-        .rules{
+            .rules{
             width: 100%;
             display: flex;
             flex-direction: column;
             gap: 2.5rem;
-            margin-bottom: 4.17vw;
+            margin-bottom: 2.17vw;
             h1{
                 font-size: 4rem;
                 color: var(--black);
@@ -202,32 +202,100 @@ body.styleGuide{
                 gap: 1vw;
             }
             .rules_1 img{
-                width: 30%;
+                width: 31.5%;
             }
             .rules_2 img{
-                width: 45.6%;
+                width: 47.9%;
             }
             p{
-                font-size: 1.25rem;
+                font-size: 1.75rem;
                 color: var(--black);
             }
             .rules_colors{
-                    width: 92.5%;
+                    width: 97%;
             }
-            .rules_composition{
+            .rules_block{
+                width: 100%;
                 display: flex;
                 flex-direction: column;
                 gap: 1.25rem;
                 .grid_desktop{
-                    width: 95%;
+                    width: 97%;
                 }
                 .grid_mobile{
-                    width: 30.4%;
+                    width: 31%;
                 }
+                .rules_photo{
+                    width: 97%;
+                }
+                div{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 3rem;
+                    align-items: flex-end;
+                }
+                .font_name{
+                    font-size: 1.25rem;
+                    color: var(--black);
+                }
+                .rules_typo{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                gap: 8rem;
+                .typo{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25rem;
+                    .typo_1{
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 1.25rem;
+                        align-items: baseline;
+                        p{
+                            font-size: 1.25rem;
+                            color: var(--black);
+                        }
+                    }
+                }
+                }
+                .graphic{
+                    width: 60%;
+                }
+                .graphic_2{
+                    width: 97%;
+                }
+                .merch{
+                    width: 97%;
+                }
+                
             }
             .grid_posts{
-                width: 95%;
+                width: 97%;
+            }
+            .icons_style{
+                width: 60%;
+            }
+
+        }
+        }
+        .footer_style{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: 0vw 0px 2vw 20vw;;
+            gap: 2.5rem;
+            margin-bottom: 2.17vw;
+            a{
+                &:hover {
+                    opacity: 0.7;
+                    transition: 0.5s;
+                }
             }
         }
+        
     }
 }
