@@ -50,7 +50,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            gap: 1.25rem;
+            gap: 1.1vw;
             a{
                 width: 32.5%;
                 text-decoration: none;
@@ -119,7 +119,7 @@
                     height: 37.5rem;
                     gap: 0.6rem;                  
                     text-decoration: none;
-                    background-image: url(/src/images/article_6.png);
+                    background-image: url(/src/images/article_6.webp);
                     background-size: cover;
                     background-position: center;
 
@@ -188,7 +188,7 @@
             }
         }
         .cards_articles{
-            gap: 1rem;
+            gap: 1.4vw;
             a{
                 width: 32.1%;
                 .card{

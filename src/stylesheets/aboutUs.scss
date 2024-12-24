@@ -67,7 +67,7 @@
       .title_aboutUs {
         width: 70.85vw;
         height: 34.86vw;
-        background-image: url(/src/images/cover_aboutus.svg);
+        background-image: url(/src/images/cover_aboutus.webp);
         z-index: 1;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -200,11 +200,11 @@
         gap: 1.25rem;
         .cover_article_1 {
           height: 20rem;
-          background-image: url(../images/cover_arlicle_1.png);
+          background-image: url(../images/cover_arlicle_1.webp);
         }
         .cover_article_2 {
           height: 20rem;
-          background-image: url(../images/cover_arlicle_2.png);
+          background-image: url(../images/cover_arlicle_2.webp);
         }
         .cover_article_1,
         .cover_article_2 {
@@ -304,6 +304,9 @@
         padding: 2.5rem 0;
         justify-content: center;
         border: 2px solid var(--black);
+        img{
+          width: 100%;
+        }
       }
     }
   }
@@ -333,6 +336,9 @@
         justify-content: flex-start;
         align-items: center;
         gap: 1.25rem;
+        .name_dasha, .name_vika,  .name_ira{
+        width: 50%;
+      }
       }
       .ira_photo {
         border-radius: 14rem;
@@ -397,12 +403,12 @@
       }
     }
     .tg_icon {
-      background-image: url(../images/telegram_icon.svg);
+      background-image: url(../images/telegram_icon.webp);
       background-size: 100%;
       background-repeat: no-repeat;
     }
     .vk_icon {
-      background-image: url(../images/vk_icon.svg);
+      background-image: url(../images/vk_icon.webp);
       background-size: 100%;
       background-repeat: no-repeat;
     }
@@ -773,7 +779,7 @@
         .title_aboutUs {
             width: 81.21vw;
             height: 121.05vw;
-            background-image: url(/src/images/cover_aboutus_mobile.svg);
+            background-image: url(/src/images/cover_aboutus_mobile.webp);
         }
         p {
           font-size: 1rem;

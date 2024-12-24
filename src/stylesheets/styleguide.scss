@@ -8,7 +8,7 @@ body.styleGuide{
     }
     .cover_styleGuide{
         width: 100%;
-        background-image: url(/src/images/logo_style.svg);
+        background-image: url(/src/images/logo_style.webp);
         background-size: 70%;
         background-position: center;
         background-repeat: no-repeat;
@@ -240,6 +240,9 @@ body.styleGuide{
                     flex-direction: row;
                     gap: 3rem;
                     align-items: flex-end;
+                    img{
+                        width: 32%;
+                    }
                 }
                 .font_name{
                     font-size: 1.25rem;
