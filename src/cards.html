@@ -16,7 +16,7 @@
     <meta property="og:description" content="Удиви своего партнера" />
     <meta
       property="og:image"
-      content="https://raw.githubusercontent.com/HSEADC/XOXO/refs/heads/main/src/images/logo.webp"
+      content="https://raw.githubusercontent.com/HSEADC/XOXO/refs/heads/main/src/images/cover_sleng.webp"
     />
 
     <!-- Twitter -->
@@ -32,10 +32,11 @@
     <meta property="twitter:description" content="Удиви своего партнера" />
     <meta
       property="twitter:image"
-      content="https://raw.githubusercontent.com/HSEADC/XOXO/refs/heads/main/src/images/logo.webp"
+      content="https://raw.githubusercontent.com/HSEADC/XOXO/refs/heads/main/src/images/cover_sleng.webp"
     />
 
     <title>Карточки</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
   </head>
   <body>
     <div class="menu">
@@ -70,7 +71,7 @@
       <h1>Netflix and chill? Cленг, без которого не&nbsp;обойтись</h1>
       
       <div class="cards_column">
-        <div class="cards_block cards_block--sleng_1">
+      <div class="cards_block cards_block--sleng_1">
           <div class="sleng_1">
             <div class="card__face card__face--front"><img src="images/sleng_1.svg" alt="" /></div>
             <div class="card__face card__face--back">
@@ -83,7 +84,7 @@
             <div class="card__face card__face--back">
               <h1>Однократный сексуальный контакт</h1>
               <p class="example_1">It was just a one-night stand, <br> nothing serious.</p>
-              <p class="example_2">"I had a one-night stand with <br> Chloe, and now Rachel knows!</p>
+              <p class="example_2">I had a one-night stand with <br> Chloe, and now Rachel knows!</p>
             </div>
           </div>
           <div class="sleng_3">
@@ -133,6 +134,58 @@
           </div>
       </div>
       </div>
+      <div class="form_cards">
+        <h1>Ты знаешь больше? <br> Напиши нам!</h1>
+        <form
+          id="my-form"
+          action="https://formspree.io/f/mldrqzor"
+          method="POST"
+        >
+          <input type="text" name="text" placeholder="Твое слово или фраза" />
+          <button id="my-form-button">Отправить</button>
+          <p id="my-form-status"></p>
+      </form>
+
+      <!-- Place this script at the end of the body tag -->
+    <script>
+      var form = document.getElementById('my-form')
+      async function handleSubmit(event) {
+        event.preventDefault()
+        var status = document.getElementById('my-form-status')
+        var data = new FormData(event.target)
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json',
+          },
+        })
+          .then((response) => {
+            if (response.ok) {
+              status.innerHTML = 'Thanks for your submission!'
+              form.reset()
+            } else {
+              response.json().then((data) => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map((error) => error['message'])
+                    .join(', ')
+                } else {
+                  status.innerHTML =
+                    'Oops! There was a problem submitting your form'
+                }
+              })
+            }
+          })
+          .catch((error) => {
+            status.innerHTML = 'Oops! There was a problem submitting your form'
+          })
+      }
+      form.addEventListener('submit', handleSubmit)
+    </script>
+
+      </div>
+      
       
     </section>
 
