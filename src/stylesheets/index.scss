@@ -14,7 +14,7 @@
       .title_main{
         width: 49rem;
         height: 40rem;
-        background-image: url(/src/images/cover_main.svg);
+        background-image: url(/src/images/cover_main.webp);
         z-index: 1;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -49,17 +49,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: 12rem;
     gap: 10rem;
     .fact{
       display: flex;
       flex-direction: column;
-      gap: 5vw;
+      gap: 0vw;
       h1{
         font-family: 'helvetica';
         font-size: 4vw;
         color: var(--black);
         transform: scale(1, 4);
+        transform-origin: bottom;
       }
       p{
         font-size: 1.5rem;
@@ -182,6 +183,9 @@
         padding: 2.5rem 0;
         justify-content: center;
         border: 2px solid var(--black);
+        img{
+          width: 90%;
+        }
       }
     }
   }
@@ -204,7 +208,7 @@
     height: 37.5rem;
     gap: 0.6rem;                  
     text-decoration: none;
-    background-image: url(/src/images/article_main_pop.png);
+    background-image: url(/src/images/article_main_pop.webp);
     background-size: cover;
     background-position: center;
     .title_card_1_type{
@@ -271,14 +275,14 @@
             .name_test_1{
               width: 41.57vw;
               height: 25.3vw;
-              background-image: url(../images/test_title_1.svg);
+              background-image: url(../images/test_title_1.webp);
               background-repeat: no-repeat;
               background-size: 100%;
             }
             .name_test_2{
               width: 41.57vw;
               height: 25.3vw;
-              background-image: url(../images/test_title_2.svg);
+              background-image: url(../images/test_title_2.webp);
               background-repeat: no-repeat;
               background-size: 100%;
             }
@@ -362,10 +366,10 @@
         }
       }
       .main_facts{
-        margin-top: 2rem;
+        margin-top: 5rem;
         gap: 5rem;
         .fact{
-          gap: 5vw;
+          gap: 0vw;
           h1{
             font-size: 3vw;
           }
@@ -517,8 +521,9 @@
     }
     .main_facts{
         flex-direction: column;
+        gap: 28.5vw;
         .fact{
-          gap: 13vw;
+          gap: 0vw;
           h1{
             font-size: 9vw;
           }
