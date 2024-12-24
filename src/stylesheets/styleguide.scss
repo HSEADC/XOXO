@@ -3,6 +3,9 @@ html {
 }
 body.styleGuide{
     background: linear-gradient(270deg, #FFF 91%, #EC3396 100%);
+    .menu-mobile{
+        display: none;
+    }
     .cover_styleGuide{
         width: 100%;
         background-image: url(/src/images/logo_style.svg);
@@ -214,6 +217,9 @@ body.styleGuide{
             .rules_colors{
                     width: 97%;
             }
+            .rules_colors_2{
+                display: none;
+            }
             .rules_block{
                 width: 100%;
                 display: flex;
@@ -286,7 +292,7 @@ body.styleGuide{
             width: 100%;
             display: flex;
             justify-content: center;
-            padding: 0vw 0px 2vw 20vw;;
+            padding: 0vw 10vw 2vw 10vw;
             gap: 2.5rem;
             margin-bottom: 2.17vw;
             a{
@@ -297,5 +303,427 @@ body.styleGuide{
             }
         }
         
+    }
+}
+
+@media screen and (max-width: 1025px){
+body.styleGuide{
+    .cover_styleGuide{
+        p{
+            font-size: 1.5rem;
+            padding: 1rem 1.5rem;
+        }
+        .p_point{
+            top: 23vw;
+        }
+        .b_point{
+            top: 31vw;
+        }
+        .g_point{
+            top: 39vw;
+        }
+    }
+    .styleGuide_page{
+        margin-top: 9vw;
+        .menuLeft{
+            width: 15.58vw;
+            font-size: 1rem;
+            top: 6vw;
+            a{
+                padding: 0.4rem 0.8rem;
+            }
+        }
+        .content_block{
+            padding-left: 27vw;
+            gap: 2rem;
+            margin-bottom: 3.17vw;
+            .heading{
+                gap: 2rem;
+                margin-bottom: 4.17vw;
+                h1{
+                    font-size: 3rem;
+                }
+                h2{
+                    font-size: 1.75rem;
+                }
+                div{
+                    gap: 1rem;
+                    p{
+                        font-size: 1.25rem;
+                        padding: 1.25rem;
+                    }
+                }
+                .values{
+                    gap: 1rem;
+                    p{
+                        font-size: 1.25rem;
+                        padding: 1.25rem;
+                    }
+                }
+            }
+            .nature{
+                gap: 2rem;
+                margin-bottom: 4.17vw;
+                h2{
+                    font-size: 1.75rem;
+                }
+                .resin_text{
+                    .resin_1, .resin_2, .resin_3, .resin_4, .resin_5, .resin_6{
+                        font-size: 2.5vw;
+                    }
+                    .resin_1, .resin_6{
+                        &:hover{
+                            transform: scale(1, 4);
+                            transition: 0.7s;
+                        }
+                    }
+                    .resin_3, .resin_4{
+                        &:hover{
+                            transform: scale(1, 4.2);
+                            transition: 0.7s;
+                        }
+                    }
+                    .resin_2, .resin_5{
+                        &:hover{
+                            transform: scale(1, 0.4);
+                            transition: 0.7s;
+                        }
+                    }
+                    .resin_1{
+                        margin-left: 30vw;
+                    }
+                    .resin_2{
+                        margin-left: 5vw;
+                    }
+                    .resin_3{
+                        margin-left: 51vw;
+                    }
+                    .resin_4{
+                        margin-left: 2vw;
+                        margin-top: 2vw;
+                    }
+                    .resin_5{
+                        margin-left: 50vw;
+                    }
+                    .resin_6{
+                        margin-left: 32vw;
+                    }
+                }
+            }
+            .rules{
+            gap: 2rem;
+            margin-bottom: 2.17vw;
+            h1{
+                font-size: 3rem;
+            }
+            .logo_grid{
+                width: 50%;
+            }
+            h2{
+                font-size: 1.75rem;
+            }
+            .rules_1, .rules_2{
+                gap: 1vw;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            .rules_colors{
+                    width: 97%;
+            }
+            .rules_block{
+                gap: 1.25rem;
+                div{
+                    flex-direction: column;
+                    gap: 2rem;
+                    align-items: flex-start;
+                }
+                .font_name{
+                    font-size: 1.25rem;
+                }
+                .rules_typo{
+                flex-direction: column;
+                gap: 1rem;
+                .typo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25rem;
+                    .typo_1{
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                }
+            }
+            .icons_style{
+                width: 80%;
+            }
+        }
+    }
+    .footer_style{
+        padding: 0vw 10vw 2vw 10vw;
+        margin-bottom: 2.17vw;
+        }  
+    }
+}
+}
+@media screen and (max-width: 700px){
+    body.styleGuide{
+    background: var(--white);
+
+    div.menu-mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 1.25rem 2.375rem 1.25rem;
+    background: linear-gradient(180deg, #EC3396 14%, #FFF 100%);
+    .burger-nav{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0rem;
+        .logo-menu{
+            display: block;
+            img{
+              width: 4.5rem;
+              height: 2.4rem;
+            }
+        }
+        .logo-inactive{
+            display: none;
+        }
+    
+    .item-menu{
+        font-size: 1.25rem;
+        display: flex;
+        padding: 0.6rem 1rem;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--black);
+        background: var(--white);
+        cursor: pointer;
+    }
+    .active{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.25rem;
+        padding: 0rem 8rem 24rem 8rem;
+        a{
+            font-size: 1.25rem;
+            display: flex;
+            padding: 0.6rem 1rem;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25rem;
+            text-decoration: none;
+            border: 2px solid var(--black);
+            color: var(--black);
+            background: var(--white);
+            cursor: pointer;
+        }
+    }
+    
+    
+    }
+    .nav-active{
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+    }
+    }
+    .cover_styleGuide{
+        background-size: 80%;
+        margin-top: 5rem;
+        p{
+            font-size: 1.25rem;
+            padding: 0.6rem 1.25rem;
+            position: relative;
+        }
+        .p_point{
+            top: 34vw;
+            left: 18vw;
+        }
+        .b_point{
+            display: none;
+        }
+        .g_point{
+            display: none;
+        }
+    }
+    .styleGuide_page{
+        padding: 0.8rem 1.25rem;
+        margin-top: 14vw;
+        overflow: hidden;
+        .menuLeft{
+            display: none;
+        }
+            .content_block{
+            padding-left: 0vw;
+            gap: 2rem;
+            margin-bottom: 5.17vw;
+            .heading{
+                gap: 1rem;
+                margin-bottom: 4.17vw;
+                h1{
+                    font-size: 1.75rem;
+                }
+                h2{
+                    font-size: 1.25rem;
+                }
+                div{
+                    gap: 0.6rem;
+                    p{
+                        font-size: 1rem;
+                        padding: 1rem;
+                    }
+                }
+                .values{
+                    gap: 0.6rem;
+                    p{
+                        font-size: 1rem;
+                        padding: 1rem;
+                    }
+                }
+            }
+            .nature{
+                gap: 2rem;
+                margin-bottom: 7.17vw;
+                h2{
+                    font-size: 1.75rem;
+                }
+                .resin_text{
+                    .resin_1, .resin_2, .resin_3, .resin_4, .resin_5, .resin_6{
+                        font-size: 4vw;
+                    }
+                    .resin_1, .resin_6{
+                            transform: scale(1, 4);
+                            color: var(--green);
+                    }
+                    .resin_3, .resin_4{
+                            transform: scale(1, 4.2);
+                            color: var(--pink);
+                    }
+                    .resin_2, .resin_5{
+                            transform: scale(1.2, 0.6);
+                            color: var(--blue);
+                    }
+                    .resin_1{
+                        margin-left: 30vw;
+                    }
+                    .resin_2{
+                        margin-left: 9vw;
+                        margin-top: 6vw;
+                    }
+                    .resin_3{
+                        margin-left: 63vw;
+                    }
+                    .resin_4{
+                        margin-left: 2vw;
+                        margin-top: 6vw;
+                    }
+                    .resin_5{
+                        margin-left: 60vw;
+                    }
+                    .resin_6{
+                        margin-left: 32vw;
+                        margin-top: 9vw;
+                    }
+                }
+            }
+            .rules{
+            gap: 1.5rem;
+            margin-bottom: 2.17vw;
+            h1{
+                font-size: 1.75rem;
+            }
+            .logo_grid{
+                width: 100%;
+            }
+            h2{
+                font-size: 1.25rem;
+            }
+            .rules_1 img{
+                width: 70%;
+            }
+            .rules_2 img{
+                width: 70%;
+            }
+            .rules_1, .rules_2{
+                gap: 3vw;
+                flex-direction: column;
+            }
+            p{
+                font-size: 1rem;
+            }
+            .rules_colors{
+                display: none;
+            }
+            .rules_colors_2{
+                display: block;
+                width: 70%;
+            }
+            .rules_block{
+                gap: 1.25rem;
+                .graphic{
+                    width: 80%;
+                }
+                .merch{
+                    width: 100%;
+                }
+                .graphic_2{
+                    display: none;
+                }
+                .grid_mobile{
+                    width: 34%;
+                }
+                .grid_desktop{
+                    width: 100%;
+                }
+                .grid_posts{
+                    width: 100%;
+                }
+                .rules_photo{
+                    width: 100%;
+                }
+                div{
+                    width: 70%;
+                    flex-direction: column;
+                    gap: 2rem;
+                    align-items: flex-start;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .font_name{
+                    font-size: 1.25rem;
+                }
+                
+                .rules_typo{
+                flex-direction: column;
+                gap: 1rem;
+                .typo{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1.25rem;
+                    .typo_1{
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                }
+            }
+            .icons_style{
+                width: 100%;
+            }
+        }
+    }
+    }
     }
 }
